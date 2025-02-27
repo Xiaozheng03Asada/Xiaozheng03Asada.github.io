@@ -97,3 +97,5 @@ main()
 
 
 进行测试！
+
+Arch Linux测试！
