@@ -14,11 +14,11 @@ future: true
 # SNS settings
 RSS: false
 weibo_username: Asada
-zhihu_username: huxpro
+zhihu_username: Asada3pro
 github_username: Xiaozheng03Asada
-twitter_username: huxpro
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+# twitter_username: Asada
+# facebook_username:  huxpro
+# linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: hux
+disqus_username: Asada
 
 # Netease settings
 netease_comment: false
