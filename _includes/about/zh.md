@@ -33,7 +33,7 @@
 我的一些会使用的社交平台，欢迎捕捉～
 
 <p> 
-<a href="https://space.bilibili.com/21958901"><img alt="Bilibili:小郑唠唠叨" src="https://img.shields.io/badge/Bilibili-小郑唠唠叨-ff6699?logo=bilibili"></a>&nbsp; 
-<a href="https://music.163.com/#/user/home?id=124215347"><img src="https://img.shields.io/badge/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90-e60026?logo=youtube-music" alt="163 Music"></a>
-<a href="https://github.com/Xiaozheng03Asada"><img src="https://img.shields.io/badge/GitHub-Xiaozheng03Asada-fff?logo=github" alt="GitHub"></a>&nbsp;
+<a href="https://space.bilibili.com/21958901"><img alt="Bilibili:小郑唠唠叨" src="https://img.shields.io/badge/Bilibili-小郑唠唠叨-ff6699?logo=bilibili&style=flat&height=20"></a>&nbsp; 
+<a href="https://music.163.com/#/user/home?id=124215347"><img src="https://img.shields.io/badge/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90-e60026?logo=youtube-music&style=flat&height=20" alt="163 Music"></a>
+<a href="https://github.com/Xiaozheng03Asada"><img src="https://img.shields.io/badge/GitHub-Xiaozheng03Asada-fff?logo=github&style=flat&height=20" alt="GitHub"></a>&nbsp;
 </p>
