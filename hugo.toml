@@ -70,10 +70,10 @@ style = 'algol'
 # Giscus comments
 [params.giscus]
 enable = true
-repo = "user/repo"
-repoid = "repoId"
+repo = "Xiaozheng03Asada/Xiaozheng03Asada.github.io"
+repoid = "R_kgDOQBKVLg"
 category = "General"
-categoryid = "categoryId"
+categoryid = "DIC_kwDOQBKVLs4Cwj23"
 mapping = "pathname"
 theme = "preferred_color_scheme"
 
