@@ -31,7 +31,7 @@ homeCollection = 'posts'
 # Lists parameters
 paginationSize = 100
 listSummaries = true
-listDateFormat = '13 Oct 2025'
+listDateFormat = '2 Jan 2006'
 
 # Breadcrumbs
 [params.breadcrumbs]
@@ -51,15 +51,15 @@ url = "https://space.bilibili.com/21958901/"
 
 # Main menu pages
 [[params.menu]]
-name = "home"
+name = "主页"
 url = "/"
 
 [[params.menu]]
-name = "posts"
+name = "归档"
 url = "/posts"
 
 [[params.menu]]
-name = "about"
+name = "关于"
 url = "/about"
 
 # Syntax highlight on code blocks
@@ -69,7 +69,7 @@ style = 'algol'
 
 # Giscus comments
 [params.giscus]
-enable = false
+enable = true
 repo = "user/repo"
 repoid = "repoId"
 category = "General"
