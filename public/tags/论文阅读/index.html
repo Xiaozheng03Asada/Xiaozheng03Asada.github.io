@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/index.xml" title="My website">
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    论文阅读 | My website
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/"/>
+
+<meta property="og:url" content="http://localhost:1313/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">
+  <meta property="og:site_name" content="My website">
+  <meta property="og:title" content="论文阅读">
+  <meta property="og:description" content="A Tech Blog">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.56b1873d8852f8a5a109abda36c1bfcde55cb48e5bcbe0d8c934a196a7dc374a.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/">My website</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/about" >
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+<div class="list-container">
+
+    <div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/tags/">Tags</a><span class="breadcrumbs-separator">/</span>
+        <a href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a></div>
+
+    <h1>论文阅读</h1>
+    
+
+    
+
+    
+    
+    
+    
+
+    
+
+    
+
+    
+    <div class="post-line">
+
+    
+
+    
+        <p class="line-date">112 Oct 1010 </p>
+    
+
+    <div>
+        <p class="line-title">
+            <a href="/posts/2025-07-09-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBbetween-lines-of-code-unraveling-the-distinct-patterns-of-machine-and-human-programmers/">
+                Between Lines of Code —— Unraveling the Distinct Patterns of Machine and Human Programmers
+            </a>
+        </p>
+
+        
+        <p class="line-summary"> <p>这段时间在鸭大暑研，时间比较清闲。没事就不由自主多读完了几篇论文。有空的话我就多记录一下吧。</p>
+<p>平时一般会关注软件工程领域居多，翻一下A会A刊有没有适合的论文。</p>
+<p>这篇是关于大模型检测的，来自ISCE25.</p>
+<h3 class="heading" id="i-introduction">
+  I. Introduction
+  <a class="anchor" href="#i-introduction">#</a>
+</h3>
+<p>**背景与动机：**大型语言模型（LLM）如 Codex 和 ChatGPT，通过在海量代码语料上训练，能够生成语法和功能均正确的代码，极大提升了软件开发的效率与创新能力。然而，这也带来了“人机代码混淆”问题：无法轻易区分代码是人类还是机器所写，进而导致代码归属混淆、漏洞追责困难、工作量评估失真等诚信与安全风险。由于过度依赖其感知的鲁棒性，机器生成的代码中的潜在漏洞可能被忽视。其中真正的作者身份和创建软件制品所投入的努力变得模糊不清。解决这些问题对于维护透明和安全的软件开发生命周期至关重要。</p>
+<p><strong>基于扰动的检测方法</strong>，如DetectGPT，在识别机器生成文本方面取得了最先进的结果：通过比较原始文本及其各种LLM扰动变体之间的似然分数差异来进行检测。</p>
+<p>然而，这种针对自然语言文本的检测方法在应用于代码时面临挑战，因为代码需要严格遵守句法规则，而自然语言可以保持更多变异性。这种情况突显了现有研究中的一个重大差距：<strong>缺乏对机器和人类编写代码的内在特征的深入评估</strong>，这对于理解机器生成代码的独特模式和制定有效的检测方法至关重要。</p>
+<p>在这篇论文中，我们从三个方面对机器编写和人工编写的代码的差异性模式进行了比较分析，包括词汇多样性、简洁性和自然性。通过我们的分析，我们发现与人类相比，机器倾向于编写更加简洁和自然的代码，其标记范围较窄，并遵循常见的编程范式，这种差异在风格标记，如空白标记中更为明显。</p>
+<p>提出了一种名为DetectCodeGPT的新方法，用于检测机器编写的代码。我们通过战略性地插入风格化标记，扩展了DetectGPT的基于扰动的框架：针对性地插入空格与换行的“样式扰动”策略，以捕捉机器生成代码在空白字符等方面的刻板模式，实现无需外部模型、零样本的高效检测。</p>
+<p>为了评估DetectCodeGPT的有效性，我们在两个数据集上对六个代码语言模型进行了广泛的实验。结果表明，DetectCodeGPT在<strong>AUROC</strong>这个指标上显著优于最先进的方法，证明是一种无模型且对模型差异鲁棒的方法。</p>
+<p>本文贡献：</p>
+<ul>
+<li>首篇对LLM生成的代码的独立模式进行全面深入分析。进一步推进LLM在编程中应用的重要见解。</li>
+<li>提出了一种检测机器生成代码的新方法。</li>
+<li>在多种设置下广泛评估了DetectCodeGPT，并展示了我们方法的有效性。</li>
+</ul>
+<h3 class="heading" id="ii-background">
+  II. BACKGROUND
+  <a class="anchor" href="#ii-background">#</a>
+</h3>
+<h4 class="heading" id="a-large-language-models-for-code">
+  A. Large Language Models for Code
+  <a class="anchor" href="#a-large-language-models-for-code">#</a>
+</h4>
+<p>基于 Transformer 解码器的大语言模型在自然语言处理任务中取得了显著的成功。在代码生成领域， Codex 和 AlphaCode 是训练大型语言模型在代码上的开创性工作。后来，为增强模型的代码理解与生成能力，研究者提出了“填空式中段”（ fill-in-the-middle ）预训练任务，以及基于指令的微调方法。最新一代模型（ ChatGPT 、 LLaMA ）在编程语言与自然语言上同时预训练，进一步提升了跨语言的代码生成效果。</p>
+<h4 class="heading" id="b-perturbation-based-detection-of-machine-generated-text">
+  B. Perturbation-Based Detection of Machine-Generated Text
+  <a class="anchor" href="#b-perturbation-based-detection-of-machine-generated-text">#</a>
+</h4>
+<p>在机器生成文本检测领域，基于扰动的 DetectGPT 方法已成为最先进的技术。核心思想是：对机器生成的文本 $x$ 施加微小扰动 $q(\cdot | x)$ 得到 $\widetilde{x}$ 时，其对数概率 $\log p_\theta(x)$ 的下降幅度要明显大于人类文本。这是因为机器生成的文本通常更可预测、更贴合训练模式，因此在扰动下会表现出明显的负曲率（log 概率急剧下降）。相比之下，人类撰写的文本具有更丰富多样的风格，反映了多元的经验与认知过程，所以在相同扰动下，人类文本的 $\log p_\theta(x)$ 不会出现如此剧烈的下降。</p> </p>
+        
+    </div>
+</div>
+    
+
+    
+
+    
+
+</div>
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

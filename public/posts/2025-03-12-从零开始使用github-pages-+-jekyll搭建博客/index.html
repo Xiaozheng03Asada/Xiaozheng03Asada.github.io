@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    从零开始使用Github Pages &#43; Jekyll搭建博客 | 小郑的自留地
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+
+<meta property="og:url" content="http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+  <meta property="og:site_name" content="小郑的自留地">
+  <meta property="og:title" content="从零开始使用Github Pages &#43; Jekyll搭建博客">
+  <meta property="og:description" content="本篇其实是课程作业 —— 上一篇博客的初始化">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-12T00:00:00+00:00">
+    <meta property="article:tag" content="Web">
+    <meta property="article:tag" content="Jekyll">
+    <meta property="article:tag" content="Github Pages">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.56b1873d8852f8a5a109abda36c1bfcde55cb48e5bcbe0d8c934a196a7dc374a.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/">小郑的自留地</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/about" >
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">从零开始使用Github Pages &#43; Jekyll搭建博客</a></div>
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">从零开始使用Github Pages &#43; Jekyll搭建博客</h1>
+        <p class="single-summary">本篇其实是课程作业 —— 上一篇博客的初始化</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-03-12T00:00:00&#43;00:00">March 12, 2025</time>
+              &nbsp; · &nbsp;1 min read
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <p>几经折腾下来终于做好了一个用着舒服的个人博客，采用<code>Github Pages</code>和<code>Jekyll</code>来搭建博客，样式美观也很简洁，在follow大佬的教程过程中也萌生了写一篇记录博文的想法，就简单做一个记录。</p>
+<h3 class="heading" id="github-pages-和jekyll是什么">
+  GitHub Pages 和Jekyll是什么
+  <a class="anchor" href="#github-pages-%e5%92%8cjekyll%e6%98%af%e4%bb%80%e4%b9%88">#</a>
+</h3>
+<p>GitHub Pages是由GitHub提供的静态网站托管服务，直接通过Git仓库自动部署，完全免费且支持自定义域名。通过它可以实现零成本搭建个人站点或者项目主页，也能很好地与Git工作流进行整合，自动支持HTTPS加密，非常适合我们部署静态博客。</p>
+<p>而Jekyll，根据官网的描述，则是一个简单的博客形态的静态站点生产机器，它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 <a href="http://daringfireball.net/projects/markdown/">Markdown</a>）和内置的 <a href="https://github.com/Shopify/liquid/wiki">Liquid</a> 渲染器转化成一个完整的可发布的静态网站，并且完全免费。</p>
+<p>Jekyll的官网文档十分详细，遇到的几乎所有问题都能找到对应的解决方案。</p>
+<h3 class="heading" id="github侧的操作">
+  Github侧的操作
+  <a class="anchor" href="#github%e4%be%a7%e7%9a%84%e6%93%8d%e4%bd%9c">#</a>
+</h3>
+<p>点击<code>New repository</code>新建一个仓库，仓库的名称要设置为<code>github用户名.github.io</code>，选择仓库为<code>Public</code>，新建一个README file.</p>
+<p>进入仓库，点击仓库的<code>Settings</code>，在左侧边栏<code>Code and automation</code>选择项<code>Pages</code>，(请先设置好Default branch)</p>
+<p>此时如果一切正常，将会在<code>GitHub Pages</code>看到对应的url：</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="" src="https://blogxiaozheng.oss-cn-beijing.aliyuncs.com/images/20250312171751542.png" >
+    </div>
+
+    
+</figure>
+</p>
+<p>我在这里设置了自定义的域名，如果你也有一个闲置的域名，可以在本栏下面的<code>Custom domaoin</code>填写，等待一会就可以用指定域名访问了。</p>
+<h3 class="heading" id="本地的操作">
+  本地的操作
+  <a class="anchor" href="#%e6%9c%ac%e5%9c%b0%e7%9a%84%e6%93%8d%e4%bd%9c">#</a>
+</h3>
+<p>笔者的老电脑搭载的是macOS Monterey系统，可以直接使用命令行来进行相应依赖的安装，就是因为版本太老，可能会在中途遇到一些问题，比如其中一项依赖<code>openssl@3</code></p>
+<h4 class="heading" id="低版本macos系统如何安装openssl3">
+  低版本macOS系统如何安装<code>openssl@3</code>
+  <a class="anchor" href="#%e4%bd%8e%e7%89%88%e6%9c%acmacos%e7%b3%bb%e7%bb%9f%e5%a6%82%e4%bd%95%e5%ae%89%e8%a3%85openssl3">#</a>
+</h4>
+<p>根据Homebrew上面的版本支持信息，我所使用的老系统已经不支持安装最新的<code>openssl@3</code>了</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="" src="https://blogxiaozheng.oss-cn-beijing.aliyuncs.com/images/20250312172224657.png" >
+    </div>
+
+    
+</figure>
+</p>
+<p>执行<code>brew install openssl@3</code>会在<code>make test</code>环节出错，如果遇到同样的问题，可以参考<a href="https://github.com/openssl/openssl/issues/22467">这个问题</a>进行解决，如果没有rb模板文件需要先生成一下。</p>
+<p>具体来说，分为以下几步：</p>
+<ol>
+<li>打开对应<code>openssl@3</code>的db模版文件，笔者电脑的文件在路径<code>/opt/homebrew/Library/Taps/homebrew/homebrew-core/Formula/o/openssl@3.rb</code> 下。</li>
+<li>打开编辑这个文件，找到有关<code>test TESTS=</code>的行，将其注释掉，就不会进行测试了。</li>
+<li>运行<code>brew install --build-from-source --formula /path/to/openssl@3.rb</code>，确定路径正确，即可完成安装。</li>
+</ol>
+<p>不少<code>C++</code>的第三方依赖也要利用<code>openssl@3</code>，弄好这个就可以更顺利的进行以后的开发。现在可以打开终端继续之后的安装：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install ruby
+</span></span><span style="display:flex;"><span>sudo gem install jekyll
+</span></span><span style="display:flex;"><span>sudo gem install jekyll bundler
+</span></span></code></pre></div><p>如果没有错误爆出，恭喜你，现在已经成功安装，可以使用<code>Jekyll</code>了～</p>
+<h4 class="heading" id="本地使用jekyll">
+  本地使用Jekyll
+  <a class="anchor" href="#%e6%9c%ac%e5%9c%b0%e4%bd%bf%e7%94%a8jekyll">#</a>
+</h4>
+<p>在想要存放博客文件夹的目录打开终端，执行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>jekyll new myblog
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">cd</span> myblog/
+</span></span><span style="display:flex;"><span>sudo bundle install
+</span></span></code></pre></div><p>执行以下命令可以本地运行博客网站：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bundle <span style="font-weight:bold;font-style:italic">exec</span> jekyll serve
+</span></span></code></pre></div><p>查看<code>Server address: http://127.0.0.1:4000</code>，就是本地访问的地址。</p>
+<p>打开之后，能看到自动生成的第一篇博文：</p>
+<blockquote>
+<p><em>Title: Welcome to Jekyll!</em></p>
+<p>You’ll find this post in your <code>_posts</code> directory. Go ahead and edit it and re-build the site to see your  changes. You can rebuild the site in many different ways, but the most  common way is to run <code>jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>&hellip; &hellip;</p></blockquote>
+<p>文件夹<code>_posts</code>用来存放md格式的文档，新建成要渲染的博文需要满足相应的命名格式<code>YEAR-MONTH-DAY-title.MARKUP</code>，其中<code>YEAR</code>是一个四位数，<code>MONTH</code>和<code>DAY</code>都是两位数，<code>MARKUP</code>是文件后缀拓展名。</p>
+<p>在新建的博文中，需要包含必要的序言部分</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>layout: post
+</span></span><span style="display:flex;"><span>title: 从零开始使用Github Pages + Jekyll搭建博客
+</span></span><span style="display:flex;"><span>author: Asada
+</span></span><span style="display:flex;"><span>header-style: text
+</span></span><span style="display:flex;"><span>catalog: true
+</span></span><span style="display:flex;"><span>tags:
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">-</span> Web
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">-</span> Jekyll
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">-</span> Github Pages
+</span></span></code></pre></div><p>添加在文档的首页，可以查看自动生成的文档的源代码研究研究。</p>
+<p>后续详细的基础配置信息都可以在Jekyll上看到对应的帮助文档。</p>
+<h3 class="heading" id="部署到github仓库上">
+  部署到Github仓库上
+  <a class="anchor" href="#%e9%83%a8%e7%bd%b2%e5%88%b0github%e4%bb%93%e5%ba%93%e4%b8%8a">#</a>
+</h3>
+<p>在博客目录下打开终端，执行：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#666;font-style:italic">&#34;&lt;commit message&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>git remote add origin git@github.com:&lt;github-username&gt;/&lt;github-username&gt;.github.io.git
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div><p>等待5分钟，就能在你自定义的域名上看到刚刚的博客主页啦～</p>
+<p>参考博文与教程：</p>
+<p><a href="https://lanzhou-j.github.io/2021/03/17/build-jekyll-blog/">Github Pages + Jekyll搭建极简博客</a></p>
+<p><a href="https://github.com/Huxpro/huxpro.github.io/blob/master/README.md">huxpro.github.io/README.md</a></p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/posts/2024-09-15-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">
+                        Hello, World!
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

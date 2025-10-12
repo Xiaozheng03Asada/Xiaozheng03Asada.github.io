@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    CS50&#39;s Introduction to Programming with Python学习记录 | My website
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/posts/2024-09-18-cs50s-introduction-to-programming-with-python%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+
+<meta property="og:url" content="http://localhost:1313/posts/2024-09-18-cs50s-introduction-to-programming-with-python%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+  <meta property="og:site_name" content="My website">
+  <meta property="og:title" content="CS50&#39;s Introduction to Programming with Python学习记录">
+  <meta property="og:description" content="Problem Set 0 # Indoor Voice: In a file called indoor.py, implement a program in Python that prompts the user for input and then outputs that same input in lowercase. Punctuation and whitespace should be outputted unchanged. You’re welcome, but not required, to prompt the user explicitly, as by passing a str of your own as an argument to input. # Catch the user&#39;s input and make input lowercase words = str(input()).lower() # Print the result print(words) Playback Speed: In a file called playback.py, implement a program in Python that prompts the user for input and then outputs that same input, replacing each space with ... (i.e., three periods). # Catch the user&#39;s input text = input() # Replace the space to &#34;...&#34; new_text = text.replace(&#34; &#34;, &#34;...&#34;) # Print the result print(new_text) Making Faces: In a file called faces.py, implement a function called convert that accepts a str as input and returns that same input with any :) converted to 🙂 (otherwise known as a slightly smiling face) and any :( converted to 🙁 (otherwise known as a slightly frowning face). All other text should be returned unchanged.">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.56b1873d8852f8a5a109abda36c1bfcde55cb48e5bcbe0d8c934a196a7dc374a.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/">My website</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /posts
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/about" >
+                /about
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+<div class="breadcrumbs"><a href="/">Home</a><span class="breadcrumbs-separator">/</span><a href="/posts/">Posts</a><span class="breadcrumbs-separator">/</span>
+        <a href="/posts/2024-09-18-cs50s-introduction-to-programming-with-python%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">CS50&#39;s Introduction to Programming with Python学习记录</a></div>
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">CS50&#39;s Introduction to Programming with Python学习记录</h1>
+        
+        
+    </header>
+    
+    <div class="single-content">
+      <h2 class="heading" id="problem-set-0">
+  Problem Set 0
+  <a class="anchor" href="#problem-set-0">#</a>
+</h2>
+<ul>
+<li>Indoor Voice: In a file called <code>indoor.py</code>, implement a program in Python that prompts the user for input and then  outputs that same input in lowercase. Punctuation and whitespace should  be outputted unchanged. You’re welcome, but not required, to prompt the  user explicitly, as by passing a <code>str</code> of your own as an argument to <code>input</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Catch the user&#39;s input and make input lowercase</span>
+</span></span><span style="display:flex;"><span>words = <span style="font-weight:bold;font-style:italic">str</span>(<span style="font-weight:bold;font-style:italic">input</span>()).lower()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Print the result</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">print</span>(words)
+</span></span></code></pre></div><ul>
+<li>Playback Speed: In a file called <code>playback.py</code>, implement a program in Python that prompts the user for input and then outputs that same input, replacing each space with <code>...</code> (i.e., three periods).</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Catch the user&#39;s input</span>
+</span></span><span style="display:flex;"><span>text = <span style="font-weight:bold;font-style:italic">input</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Replace the space to &#34;...&#34;</span>
+</span></span><span style="display:flex;"><span>new_text = text.replace(<span style="color:#666;font-style:italic">&#34; &#34;</span>, <span style="color:#666;font-style:italic">&#34;...&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Print the result</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">print</span>(new_text)
+</span></span></code></pre></div><ul>
+<li>
+<p>Making Faces: In a file called <code>faces.py</code>, implement a function called <code>convert</code> that accepts a <code>str</code> as input and returns that same input with any <code>:)</code> converted to 🙂 (otherwise known as a <a href="https://emojipedia.org/slightly-smiling-face/">slightly smiling face</a>) and any <code>:(</code> converted to 🙁 (otherwise known as a <a href="https://emojipedia.org/slightly-frowning-face/">slightly frowning face</a>). All other text should be returned unchanged.</p>
+<p>Then, in that same file, implement a function called <code>main</code> that prompts the user for input, calls <code>convert</code> on that input, and prints the result. You’re welcome, but not required, to prompt the user explicitly, as by passing a <code>str</code> of your own as an argument to <code>input</code>. Be sure to call <code>main</code> at the bottom of your file.</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Emoji Conversion</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">convert</span>(<span style="font-weight:bold;font-style:italic">str</span>):
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;font-style:italic">str</span> = <span style="font-weight:bold;font-style:italic">str</span>.replace(<span style="color:#666;font-style:italic">&#34;:)&#34;</span>, <span style="color:#666;font-style:italic">&#34;🙂&#34;</span>).replace(<span style="color:#666;font-style:italic">&#34;:(&#34;</span>, <span style="color:#666;font-style:italic">&#34;🙁&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">return</span> <span style="font-weight:bold;font-style:italic">str</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">main</span>():
+</span></span><span style="display:flex;"><span>    text = <span style="font-weight:bold;font-style:italic">input</span>()
+</span></span><span style="display:flex;"><span>    result = convert(text)
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;font-style:italic">print</span>(result)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main()
+</span></span></code></pre></div><ul>
+<li>Einstein: In a file called <code>einstein.py</code>, implement a program in Python that prompts the user for mass as an  integer (in kilograms) and then outputs the equivalent number of Joules  as an integer. Assume that the user will input an integer.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">import</span> <span style="color:#666;font-weight:bold;font-style:italic">math</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Catch the user&#39;s input</span>
+</span></span><span style="display:flex;"><span>m = <span style="font-weight:bold;font-style:italic">int</span>(<span style="font-weight:bold;font-style:italic">input</span>(<span style="color:#666;font-style:italic">&#34;m=&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Calculate the fomular</span>
+</span></span><span style="display:flex;"><span>E = m * <span style="font-weight:bold;font-style:italic">pow</span>(300000000, 2)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Output the result</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">print</span>(E)
+</span></span></code></pre></div><ul>
+<li>Tip Calculator:
+<ul>
+<li><code>dollars_to_float</code>, which should accept a <code>str</code> as input (formatted as <code>$##.##</code>, wherein each <code>#</code> is a decimal digit), remove the leading <code>$</code>, and return the amount as a <code>float</code>. For instance, given <code>$50.00</code> as input, it should return <code>50.0</code>.</li>
+<li><code>percent_to_float</code>, which should accept a <code>str</code> as input (formatted as <code>##%</code>, wherein each <code>#</code> is a decimal digit), remove the trailing <code>%</code>, and return the percentage as a <code>float</code>. For instance, given <code>15%</code> as input, it should return <code>0.15</code>.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">main</span>():
+</span></span><span style="display:flex;"><span>    dollars = dollars_to_float(<span style="font-weight:bold;font-style:italic">input</span>(<span style="color:#666;font-style:italic">&#34;How much was the meal? &#34;</span>))
+</span></span><span style="display:flex;"><span>    percent = percent_to_float(<span style="font-weight:bold;font-style:italic">input</span>(<span style="color:#666;font-style:italic">&#34;What percentage would you like to tip? &#34;</span>))
+</span></span><span style="display:flex;"><span>    tip = dollars * percent
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;font-style:italic">print</span>(<span style="color:#666;font-style:italic">f</span><span style="color:#666;font-style:italic">&#34;Leave $</span><span style="color:#666;font-style:italic">{</span>tip<span style="color:#666;font-style:italic">:</span><span style="color:#666;font-style:italic">.2f</span><span style="color:#666;font-style:italic">}</span><span style="color:#666;font-style:italic">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">dollars_to_float</span>(d):
+</span></span><span style="display:flex;"><span>    <span style="color:#888;font-style:italic"># TODO</span>
+</span></span><span style="display:flex;"><span>    d = <span style="font-weight:bold;font-style:italic">float</span>(d.replace(<span style="color:#666;font-style:italic">&#34;$&#34;</span>, <span style="color:#666;font-style:italic">&#34;&#34;</span>))
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">return</span> d
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;text-decoration:underline">def</span> <span style="color:#666;font-weight:bold;font-style:italic">percent_to_float</span>(p):
+</span></span><span style="display:flex;"><span>    <span style="color:#888;font-style:italic"># TODO</span>
+</span></span><span style="display:flex;"><span>    p = <span style="font-weight:bold;font-style:italic">float</span>(p.replace(<span style="color:#666;font-style:italic">&#34;%&#34;</span>, <span style="color:#666;font-style:italic">&#34;&#34;</span>)) * 0.01
+</span></span><span style="display:flex;"><span>    <span style="font-weight:bold;text-decoration:underline">return</span> p
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main()
+</span></span></code></pre></div><p>进行测试！</p>
+<p>Arch Linux测试！</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/posts/2024-09-15-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">
+                        Hello, World!
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+    
+    
+
+
+
+
+
+    
+
+
+
+
+    
+    <p>Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        and
+        <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+    </p>
+    
+    
+    
+
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>
