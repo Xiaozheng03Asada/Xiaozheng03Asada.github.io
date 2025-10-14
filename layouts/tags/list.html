@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div class="list-container">
+
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{ $paginator := .Paginate (.Pages) (.Site.Params.paginationSize | default 100) }}
+
+    {{ range $index, $page := $paginator.Pages }}
+    <div class="post-line">
+        <div>
+            <p class="line-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </p>
+            {{ if .Site.Params.listSummaries }}
+            <p class="line-summary">{{ .Summary }}</p>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ partial "pagination-controls.html" $paginator }}
+
+</div>
+
+{{ end }}
+
+

@@ -25,7 +25,7 @@ homeIntroContent = """
 """
 
 # Collection to display on home
-homeCollectionTitle = 'Posts'
+homeCollectionTitle = '时间轴'
 homeCollection = 'posts'
 
 # Lists parameters
@@ -42,9 +42,8 @@ Powered by [Hugo](https://gohugo.io/) and [tomfran/typo](https://github.com/tomf
 
 # Breadcrumbs
 [params.breadcrumbs]
-enabled = true
-showCurrentPage = true
-home = "Home"
+enabled = false
+showCurrentPage = false
 
 # Social icons
 [[params.social]]
@@ -62,12 +61,12 @@ name = "主页"
 url = "/"
 
 [[params.menu]]
-name = "时间轴"
-url = "/posts"
+name = "分类"
+url = "/tags"
 
 [[params.menu]]
-name = "标签"
-url = "/tags"
+name = "时间轴"
+url = "/posts"
 
 [[params.menu]]
 name = "关于"

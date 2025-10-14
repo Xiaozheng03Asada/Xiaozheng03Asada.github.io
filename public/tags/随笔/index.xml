@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/posts/2024-09-15-%E7%AC%AC%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid>
       <description>上一篇博客的初始化</description>
     </item>
+    <item>
+      <title>从零开始使用Github Pages &#43; Jekyll搭建博客</title>
+      <link>http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>本篇其实是课程作业 —— 上一篇博客的初始化</description>
+    </item>
   </channel>
 </rss>

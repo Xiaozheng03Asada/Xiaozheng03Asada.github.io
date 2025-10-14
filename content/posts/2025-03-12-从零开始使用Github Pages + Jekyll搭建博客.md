@@ -2,7 +2,7 @@
 title: "从零开始使用Github Pages + Jekyll搭建博客"
 date:   "2025-03-12"
 summary: "本篇其实是课程作业 —— 上一篇博客的初始化"
-tags:   ["Web", "Jekyll", "Github Pages"]
+tags:   ["随笔"]
 showTags: true
 toc: true
 readTime: true
