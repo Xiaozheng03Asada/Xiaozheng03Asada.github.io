@@ -33,6 +33,13 @@ paginationSize = 100
 listSummaries = true
 listDateFormat = '2 Jan 2006'
 
+# Footer
+showFooter = true
+footerContent = """
+**Xiaozheng** · © 2025 
+Powered by [Hugo](https://gohugo.io/) and [tomfran/typo](https://github.com/tomfran/typo)
+"""
+
 # Breadcrumbs
 [params.breadcrumbs]
 enabled = true
@@ -55,8 +62,12 @@ name = "主页"
 url = "/"
 
 [[params.menu]]
-name = "归档"
+name = "时间轴"
 url = "/posts"
+
+[[params.menu]]
+name = "标签"
+url = "/tags"
 
 [[params.menu]]
 name = "关于"
@@ -81,3 +92,4 @@ theme = "preferred_color_scheme"
 enable = true
 websiteId = "6b19b065-a8db-403e-80b0-1ff1da10ae24"
 jsLocation = "https://cloud.umami.is/script.js"
+
