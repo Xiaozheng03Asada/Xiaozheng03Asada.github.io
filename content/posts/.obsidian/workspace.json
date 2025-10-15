@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
+                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客"
+              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
+                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客 的反向链接列表"
+              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
+                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客 的出链列表"
+              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得 的出链列表"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
+                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客 的大纲"
+              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得 的大纲"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "0a7228617cb46981",
   "lastOpenFiles": [
+    "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
     "2024-09-15-第一篇测试文章.md"
   ]
 }
