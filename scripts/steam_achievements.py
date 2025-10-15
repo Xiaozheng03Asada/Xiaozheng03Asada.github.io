@@ -26,12 +26,11 @@ class SteamAchievements:
             'key': self.api_key,
             'appid': self.app_id
         }
-        
         try:
             response = requests.get(url, params=params)
             response.raise_for_status()
             data = response.json()
-            
+
             if 'game' in data:
                 game_data = data['game']
                 return {
@@ -42,7 +41,7 @@ class SteamAchievements:
             else:
                 print("未找到游戏数据")
                 return None
-                
+
         except requests.exceptions.RequestException as e:
             print(f"获取游戏信息失败: {e}")
             return None
@@ -80,6 +79,76 @@ class SteamAchievements:
             formatted_achievements.append(formatted_achievement)
         
         return formatted_achievements
+    
+    def get_game_schema_bilingual(self, langs=('english', 'schinese')):
+        """
+        Fetch schema for multiple languages and merge by achievement 'name'.
+        langs: tuple/list of Steam language codes (e.g. 'english', 'schinese')
+        Returns: merged achievements list, merged game_info (name/version from first available)
+        """
+        schemas = {}
+        game_info = None
+        for lang in langs:
+            url = f"{self.base_url}/ISteamUserStats/GetSchemaForGame/v2/"
+            params = {
+                'key': self.api_key,
+                'appid': self.app_id,
+                'l': lang
+            }
+            try:
+                r = requests.get(url, params=params)
+                r.raise_for_status()
+                data = r.json()
+                if 'game' in data:
+                    g = data['game']
+                    if not game_info:
+                        game_info = {
+                            'name': g.get('gameName', 'Unknown Game'),
+                            'version': g.get('gameVersion', ''),
+                            'availableGameStats': g.get('availableGameStats', {})
+                        }
+                    achs = g.get('availableGameStats', {}).get('achievements', [])
+                    for a in achs:
+                        key = a.get('name')
+                        if not key:
+                            continue
+                        if key not in schemas:
+                            schemas[key] = {
+                                'name': key,
+                                'icon': a.get('icon', ''),
+                                'icongray': a.get('icongray', ''),
+                                'hidden': a.get('hidden', 0),
+                                'steamUrl': f"https://steamcommunity.com/stats/{self.app_id}/achievements/#{key}"
+                            }
+                        # store language-specific fields
+                        if lang in ('schinese', 'tchinese'):
+                            schemas[key]['displayName_zh'] = a.get('displayName', '')
+                            schemas[key]['description_zh'] = a.get('description', '')
+                        else:
+                            schemas[key][f'displayName_{lang}'] = a.get('displayName', '')
+                            schemas[key][f'description_{lang}'] = a.get('description', '')
+            except requests.exceptions.RequestException as e:
+                print(f"\u83b7\u53d6 {lang} \u8a00\u8a9e\u7684\u6210\u5c31\u6570\u636e\u5931\u8d25: {e}")
+                continue
+
+        # normalize fields: ensure displayName_en and description_en exist using 'english' key
+        achievements = []
+        for k, v in schemas.items():
+            # english field may be stored as displayName_english
+            v['displayName_en'] = v.get('displayName_english', v.get('displayName_en', v.get('displayName', '')))
+            v['description_en'] = v.get('description_english', v.get('description_en', v.get('description', '')))
+            # prefer zh content for default displayName/description if available
+            if v.get('displayName_zh'):
+                v['displayName'] = v['displayName_zh']
+            else:
+                v['displayName'] = v.get('displayName_en', v.get('displayName', ''))
+            if v.get('description_zh'):
+                v['description'] = v['description_zh']
+            else:
+                v['description'] = v.get('description_en', v.get('description', ''))
+            achievements.append(v)
+
+        return achievements, game_info
     
     def save_to_json(self, achievements, output_path, game_info):
         """保存成就数据到JSON文件"""
@@ -195,24 +264,29 @@ def main():
     # 创建Steam成就获取器
     steam_achievements = SteamAchievements(STEAM_API_KEY, args.app_id)
     
-    print(f"正在获取游戏 App ID {args.app_id} 的成就数据...")
-    
-    # 获取成就数据
-    achievements, game_info = steam_achievements.get_game_schema()
-    
+    print(f"正在获取游戏 App ID {args.app_id} 的成就数据（双语）...")
+
+    # 优先使用双语抓取（中文 schinese, 英文 english）
+    achievements, game_info = steam_achievements.get_game_schema_bilingual(langs=('schinese', 'english'))
+
+    # 如果双语抓取失败，回退到单语言旧流程
+    if not achievements or not game_info:
+        print("未获取到双语数据，尝试使用单语言接口...")
+        achievements, game_info = steam_achievements.get_game_schema()
+
     if achievements and game_info:
-        # 格式化数据
-        formatted_achievements = steam_achievements.format_achievement_data(achievements)
-        
+        # 双语接口已经返回合并后的对象，直接写入
+        formatted_achievements = achievements
+
         # 确定输出文件路径
         if args.output:
             output_path = args.output
         else:
             output_path = generate_safe_filename(game_info.get('name', 'Unknown'), args.app_id)
-        
+
         # 保存到JSON文件
         steam_achievements.save_to_json(formatted_achievements, output_path, game_info)
-        
+
         print("\n✅ 成就数据同步完成!")
         print(f"📁 数据文件: {output_path}")
         print(f"🎮 游戏名称: {game_info.get('name', 'Unknown Game')}")

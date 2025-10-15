@@ -28,7 +28,7 @@
     
     <div class="achievements-grid">
         {{ range $achievements.achievements }}
-        <div class="achievement-card {{ if eq .hidden 1 }}hidden-achievement{{ end }}">
+    <div class="achievement-card {{ if eq .hidden 1 }}hidden-achievement{{ end }}" data-name-zh="{{ with .displayName_zh }}{{ . }}{{ else }}{{ .displayName }}{{ end }}" data-name-en="{{ with .displayName_en }}{{ . }}{{ else }}{{ .displayName }}{{ end }}" data-desc-zh="{{ with .description_zh }}{{ . }}{{ else }}{{ .description }}{{ end }}" data-desc-en="{{ with .description_en }}{{ . }}{{ else }}{{ .description }}{{ end }}">
             <div class="achievement-icon">
                 <a href="{{ .steamUrl }}" target="_blank" rel="noopener">
                     <img src="{{ .icon }}" alt="{{ .displayName }}" 
@@ -39,14 +39,14 @@
             <div class="achievement-info">
                 <h4 class="achievement-name">
                     <a href="{{ .steamUrl }}" target="_blank" rel="noopener">
-                        {{ .displayName }}
+                        <span class="achievement-name-text">{{ with .displayName_zh }}{{ . }}{{ else }}{{ .displayName }}{{ end }}</span>
                     </a>
                     {{ if eq .hidden 1 }}
                         <span class="hidden-badge">隐藏</span>
                     {{ end }}
                 </h4>
                 
-                <p class="achievement-description">{{ .description }}</p>
+                <p class="achievement-description">{{ with .description_zh }}{{ . }}{{ else }}{{ .description }}{{ end }}</p>
                 
                 <div class="achievement-links">
                     <a href="{{ .steamUrl }}" target="_blank" rel="noopener" class="steam-link">

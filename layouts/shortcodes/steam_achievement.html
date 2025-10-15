@@ -35,14 +35,16 @@
     <div class="achievement-content">
         <h4 class="achievement-title">
             <a href="{{ $achievement.steamUrl }}" target="_blank" rel="noopener">
-                {{ $achievement.displayName }}
+                <span class="achievement-title-text" data-name-zh="{{ with $achievement.displayName_zh }}{{ . }}{{ else }}{{ $achievement.displayName }}{{ end }}" data-name-en="{{ with $achievement.displayName_en }}{{ . }}{{ else }}{{ $achievement.displayName }}{{ end }}">
+                    {{ with $achievement.displayName_zh }}{{ . }}{{ else }}{{ $achievement.displayName }}{{ end }}
+                </span>
             </a>
             {{ if eq $achievement.hidden 1 }}
                 <span class="hidden-badge">隐藏</span>
             {{ end }}
         </h4>
         
-        <p class="achievement-desc">{{ $achievement.description }}</p>
+        <p class="achievement-desc" data-desc-zh="{{ with $achievement.description_zh }}{{ . }}{{ else }}{{ $achievement.description }}{{ end }}" data-desc-en="{{ with $achievement.description_en }}{{ . }}{{ else }}{{ $achievement.description }}{{ end }}">{{ with $achievement.description_zh }}{{ . }}{{ else }}{{ $achievement.description }}{{ end }}</p>
         
         <a href="{{ $achievement.steamUrl }}" target="_blank" rel="noopener" class="steam-button">
             <i class="steam-icon"></i> Steam页面

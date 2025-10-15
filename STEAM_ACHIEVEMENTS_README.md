@@ -146,7 +146,37 @@ python scripts/steam_achievements.py --list-games
 
 ## 自定义样式
 
-您可以通过修改短代码文件中的CSS来自定义成就展示的样式：
+### 主题切换支持
+
+Steam成就展示组件完全支持深色/浅色主题切换：
+
+- ✅ **自动检测**：支持 `prefers-color-scheme` 媒体查询
+- ✅ **类名切换**：支持 `.theme-dark` 和 `.theme-light` 类名方式
+- ✅ **CSS变量**：使用CSS自定义属性，便于主题定制
+- ✅ **平滑过渡**：所有颜色变化都有平滑的过渡效果
+
+### 自定义颜色变量
+
+您可以通过覆盖以下CSS变量来自定义颜色：
+
+```css
+.steam-achievements-container {
+    --bg-primary: white;           /* 主要背景色 */
+    --bg-secondary: #f8f9fa;       /* 次要背景色 */
+    --bg-tertiary: #f0f0f0;        /* 第三背景色 */
+    --text-primary: #171a21;       /* 主要文字颜色 */
+    --text-secondary: #8f98a0;     /* 次要文字颜色 */
+    --border-color: #e1e5e9;       /* 边框颜色 */
+    --border-light: #d6d9dc;       /* 浅色边框 */
+    --border-secondary: #c0c0c0;   /* 次要边框 */
+    --accent-color: #1b2838;       /* 强调色 */
+    --link-color: #66c0f4;         /* 链接颜色 */
+    --link-hover: #4a9fd1;         /* 链接悬停色 */
+    --shadow-color: rgba(0,0,0,0.1); /* 阴影颜色 */
+}
+```
+
+### 其他自定义选项
 
 - 修改 `.steam-achievements-container` 来改变整体容器样式
 - 修改 `.achievement-card` 来改变单个成就卡片样式
