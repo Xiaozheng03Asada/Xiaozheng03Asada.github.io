@@ -9,6 +9,8 @@ readTime: true
 math: false
 ---
 
+> 本文其实是已经过时的一篇课程实验报告 —— 搭建一个博客，已经失去时效性。
+
 几经折腾下来终于做好了一个用着舒服的个人博客，采用`Github Pages`和`Jekyll`来搭建博客，样式美观也很简洁，在follow大佬的教程过程中也萌生了写一篇记录博文的想法，就简单做一个记录。
 
 ### GitHub Pages 和Jekyll是什么
