@@ -7,7 +7,6 @@ showTags: true
 toc: true
 readTime: true
 math: false
-showTags: false
 ---
 
 几经折腾下来终于做好了一个用着舒服的个人博客，采用`Github Pages`和`Jekyll`来搭建博客，样式美观也很简洁，在follow大佬的教程过程中也萌生了写一篇记录博文的想法，就简单做一个记录。
