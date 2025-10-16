@@ -16,10 +16,12 @@
       const apiUrl = `https://cloud.umami.is/api/share/${shareId}/stats?startAt=0&endAt=${endAt}`;
       const res = await fetch(apiUrl, { headers: { Accept: 'application/json' } });
       if (!res.ok) {
-        throw new Error(`Umami stats request failed: ${res.status} ${res.statusText}`);
+        const errorText = await res.text();
+        throw new Error(`Umami stats 请求失败: ${res.status} ${res.statusText} ${errorText}`);
       }
       const data = await res.json();
-      document.getElementById('umami-pageviews').textContent = `访问量：${data.pageviews?.value ?? '未知'}`;
+      const pageviews = data?.pageviews?.value;
+      document.getElementById('umami-pageviews').textContent = `访问量：${typeof pageviews === 'number' ? pageviews : '未知'}`;
     } catch (err) {
       console.error('加载 Umami 数据失败', err);
       document.getElementById('umami-pageviews').textContent = '访问量：获取失败';
