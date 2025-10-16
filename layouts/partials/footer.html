@@ -1,0 +1,41 @@
+<!-- layouts/partials/footer.html -->
+<footer class="footer">
+  <div class="footer-content">
+    <div id="site-stats">
+      <span id="umami-pageviews">访问量：加载中…</span>
+      <span class="stats-separator">·</span>
+      <span id="site-uptime">运行时间：加载中…</span>
+    </div>
+    <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/tomfran/typo">typo</a></p>
+  </div>
+  <style>
+    .footer {
+      font-family: var(--font-body);
+      font-size: var(--p-font-size);
+      line-height: var(--p-line-height);
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      align-items: center;
+    }
+
+    #site-stats {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .footer-content p {
+      margin: 0;
+    }
+
+    .stats-separator {
+      opacity: 0.5;
+    }
+  </style>
+  <script src="/js/umami-footer.js" defer></script>
+</footer>
