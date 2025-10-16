@@ -1,24 +1,25 @@
 {
   "main": {
-    "id": "33f5a2ea830fb742",
+    "id": "3bb12d470fcd0291",
     "type": "split",
     "children": [
       {
-        "id": "6bb5464b1671d53f",
+        "id": "a94ec6e6a9fe4998",
         "type": "tabs",
         "children": [
           {
-            "id": "0a7228617cb46981",
+            "id": "53c2b5d46760f3a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
+                "file": "2025-10-15-macOS开发环境配置指北.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得"
+              "title": "2025-10-15-macOS开发环境配置指北"
             }
           }
         ]
@@ -27,15 +28,16 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "032122b23fbebeea",
+    "id": "64e5df844da43397",
     "type": "split",
     "children": [
       {
-        "id": "14f5221adee735fc",
+        "id": "404b714244a12346",
         "type": "tabs",
+        "dimension": 59.28143712574851,
         "children": [
           {
-            "id": "32ad3083ad5b35e3",
+            "id": "7408259d9b92b5f4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +50,7 @@
             }
           },
           {
-            "id": "1654fb089b276fce",
+            "id": "42aa1a006d235dd3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -63,38 +65,73 @@
               "icon": "lucide-search",
               "title": "搜索"
             }
-          },
-          {
-            "id": "71094bcc7c7d220b",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "书签"
-            }
           }
         ]
+      },
+      {
+        "id": "98f0d4a0722ccaa3",
+        "type": "tabs",
+        "dimension": 40.7185628742515,
+        "children": [
+          {
+            "id": "a2ea7e19451c5b4f",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          },
+          {
+            "id": "324c0b9d83c44a19",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2025-10-15-macOS开发环境配置指北.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2025-10-15-macOS开发环境配置指北 的大纲"
+            }
+          },
+          {
+            "id": "98695456d98030ce",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "empty",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 207
   },
   "right": {
-    "id": "f6eb17943ab9d80f",
+    "id": "61191f8ea8fb7606",
     "type": "split",
     "children": [
       {
-        "id": "e3f4c9333782224f",
+        "id": "4294f9e389e0008a",
         "type": "tabs",
         "children": [
           {
-            "id": "3f1a349ab84c71af",
+            "id": "6ad73b7dcf2a71b6",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
+                "file": "2025-10-15-macOS开发环境配置指北.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,58 +141,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得 的反向链接列表"
+              "title": "2025-10-15-macOS开发环境配置指北 的反向链接列表"
             }
           },
           {
-            "id": "7d92347626b35e7e",
+            "id": "46b54befe5ed140b",
             "type": "leaf",
             "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得 的出链列表"
-            }
-          },
-          {
-            "id": "64f1063d3db57d74",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
-          {
-            "id": "3eca400c2a18372f",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得 的大纲"
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 302.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -163,15 +167,32 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "workspaces:管理工作区布局": false,
+      "bases:创建新数据库": false,
+      "obsidian-memos:Memos": false,
+      "periodic-notes:Open today": false,
+      "homepage:Open homepage": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "0a7228617cb46981",
+  "active": "53c2b5d46760f3a1",
   "lastOpenFiles": [
+    "2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
     "2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
-    "2024-09-15-第一篇测试文章.md"
+    "2025-10-15-macOS开发环境配置指北.md",
+    "2025-05-07-音击手台静音方案尝试.md",
+    "_index.md",
+    "40 - Obsidian/主页/00. 主页.md",
+    "40 - Obsidian/主页/00. 导航.md",
+    "20 - 工作学习/学习/00. 学习.md",
+    "更新日志.md",
+    "10 - 人员管理/员工/小一.md",
+    "10 - 人员管理/员工/小二.md",
+    "00 - 每日日记/DailyNote/2022年06月01日.md",
+    "00 - 每日日记/DailyNote/2022年05月27日.md",
+    "00 - 每日日记/DailyNote/2022年05月13日.md",
+    "00 - 每日日记/DailyNote/2022年05月12日.md"
   ]
 }
