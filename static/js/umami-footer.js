@@ -1,7 +1,6 @@
 // static/js/umami-footer.js
 (function () {
-  const websiteId = '6b19b065-a8db-403e-80b0-1ff1da10ae24';
-  const apiKey = 'api_GTOZvVQYnxhODtYgHWdIrE1R04ufKfdh';
+  const shareId = 'U63fmlnzu8CuQ25x';
   const siteStart = '2025-10-13T00:00:00+08:00'; // 站点上线时间
 
   function formatDuration(ms) {
@@ -14,9 +13,11 @@
   async function loadUmami() {
     try {
       const endAt = Date.now();
-      const res = await fetch(`https://cloud.umami.is/api/websites/${websiteId}/stats?startAt=0&endAt=${endAt}`, {
-        headers: { Authorization: `Bearer ${apiKey}`, Accept: 'application/json' },
-      });
+      const apiUrl = `https://cloud.umami.is/api/share/${shareId}/stats?startAt=0&endAt=${endAt}`;
+      const res = await fetch(apiUrl, { headers: { Accept: 'application/json' } });
+      if (!res.ok) {
+        throw new Error(`Umami stats request failed: ${res.status} ${res.statusText}`);
+      }
       const data = await res.json();
       document.getElementById('umami-pageviews').textContent = `访问量：${data.pageviews?.value ?? '未知'}`;
     } catch (err) {
