@@ -21,7 +21,7 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = '你好!'
 homeIntroContent = """
-这里是主页信息～ 看见他就代表加载成功了
+这里是我记录学习心得、旅途故事与娱乐活动的小角落。我喜欢把灵感、收获和快乐都留在这里，期待和你分享交流 (ᕑᗢᓫ∗)˒
 """
 
 # Collection to display on home
