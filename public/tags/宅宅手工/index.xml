@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>宅宅手工 on 小郑的自留地</title>
+    <link>http://localhost:1313/tags/%E5%AE%85%E5%AE%85%E6%89%8B%E5%B7%A5/</link>
+    <description>Recent content in 宅宅手工 on 小郑的自留地</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 07 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E5%AE%85%E5%AE%85%E6%89%8B%E5%B7%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>音击手台静音方案探索尝试</title>
+      <link>http://localhost:1313/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</link>
+      <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</guid>
+      <description>一些小手工</description>
+    </item>
+  </channel>
+</rss>

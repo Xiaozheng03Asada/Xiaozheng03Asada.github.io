@@ -69,6 +69,10 @@ name = "时间轴"
 url = "/posts"
 
 [[params.menu]]
+name = "日记"
+url = "/diary"
+
+[[params.menu]]
 name = "关于"
 url = "/about"
 
@@ -91,4 +95,3 @@ theme = "preferred_color_scheme"
 enable = true
 websiteId = "6b19b065-a8db-403e-80b0-1ff1da10ae24"
 jsLocation = "https://cloud.umami.is/script.js"
-

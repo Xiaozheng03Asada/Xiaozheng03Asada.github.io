@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN"
+  dir="ltr">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="http://localhost:1313/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+
+<title>
+    
+    macOS 开发环境配置指北 | 小郑的自留地
+    
+</title>
+
+<link rel="canonical" href="http://localhost:1313/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/"/>
+
+<meta property="og:url" content="http://localhost:1313/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/">
+  <meta property="og:site_name" content="小郑的自留地">
+  <meta property="og:title" content="macOS 开发环境配置指北">
+  <meta property="og:description" content="在入门款 MBA M1 上搭建 macOS 12.7 的日常开发工作流记录">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-10-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-10-15T00:00:00+00:00">
+    <meta property="article:tag" content="宅宅开发">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.b51e6f1b51d89b17f32f153f4c057ca82da114303f795d07c02824b297e71523.css" media="all">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="auto">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="http://localhost:1313/">小郑的自留地</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /主页
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/tags" >
+                /分类
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/posts" >
+                /时间轴
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/diary" >
+                /日记
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/about" >
+                /关于
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+
+
+
+<div >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">macOS 开发环境配置指北</h1>
+        <p class="single-summary">在入门款 MBA M1 上搭建 macOS 12.7 的日常开发工作流记录</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2025-10-15T00:00:00&#43;00:00">October 15, 2025</time>
+              &nbsp; · &nbsp;2 min read
+            </p>
+          </div>
+        </div>
+        
+    </header>    
+        <div class="single-tags"><span>
+                  <a href="http://localhost:1313/tags/%E5%AE%85%E5%AE%85%E5%BC%80%E5%8F%91/">#宅宅开发</a>
+                </span>
+        </div>
+      <aside class="toc">
+        <p><strong>Table of contents</strong></p>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#设备体验">设备体验</a></li>
+    <li><a href="#初始设置清单">初始设置清单</a></li>
+    <li><a href="#开发工具安装策略">开发工具安装策略</a>
+      <ul>
+        <li><a href="#1-xcode-command-line-tools">1. Xcode Command Line Tools</a></li>
+        <li><a href="#2-homebrew-为核心包管理器">2. Homebrew 为核心包管理器</a></li>
+        <li><a href="#3-编程语言管理">3. 编程语言管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#shell-与终端美化">Shell 与终端美化</a>
+      <ul>
+        <li><a href="#1-终端应用与主题">1. 终端应用与主题</a></li>
+        <li><a href="#2-字体选择">2. 字体选择</a></li>
+      </ul>
+    </li>
+    <li><a href="#网络代理与同步">网络代理与同步</a>
+      <ul>
+        <li><a href="#1-系统层代理">1. 系统层代理</a></li>
+      </ul>
+    </li>
+    <li><a href="#结语">结语</a></li>
+  </ul>
+</nav>
+      </aside>
+    
+    <div class="single-content">
+      <h2 class="heading" id="前言">
+  前言
+  <a class="anchor" href="#%e5%89%8d%e8%a8%80">#</a>
+</h2>
+<p>这是一份记录我在 <strong>MacBook Air M1（8G / 256G）</strong> 上搭建开发环境的随手笔记。已经是一台近 5 岁高龄的老笔记本了（<del>虽然这样的老笔记本还有不少</del>），考虑续航、温控和稳定性，我把系统锁定在 macOS 12.7（Monterey），避免频繁升级带来的兼容问题。整体目标是：确保基础开发功能齐全，终端体验顺手，同时维持系统的整洁与可维护性。</p>
+<h2 class="heading" id="设备体验">
+  设备体验
+  <a class="anchor" href="#%e8%ae%be%e5%a4%87%e4%bd%93%e9%aa%8c">#</a>
+</h2>
+<ul>
+<li>MBA M1 的单风扇无风扇散热和出色续航非常适合日常开发、轻度虚拟化与远程工作。性能有限，而且还是低配版，但通过合理的软件选择可以获得流畅体验。</li>
+<li><strong>为什么是 macOS 12.7</strong>：Monterey 在 Apple Silicon 上已经相当成熟，能兼容主流开发工具，虽然体验不到新系统新特性，但是功耗续航都十分可观。</li>
+<li><strong>系统安装习惯</strong>：保持 APFS 单分区，关闭自动升级，只在安全更新或确定兼容性时手动触发。安装完成后第一时间登录 Apple ID 以同步 Keychain 和常用设置。</li>
+</ul>
+<h2 class="heading" id="初始设置清单">
+  初始设置清单
+  <a class="anchor" href="#%e5%88%9d%e5%a7%8b%e8%ae%be%e7%bd%ae%e6%b8%85%e5%8d%95">#</a>
+</h2>
+<ol>
+<li><strong>系统更新</strong>：<code>系统设置 → 通用 → 软件更新</code>，仅安装安全补丁，关闭“自动更新”。</li>
+<li><strong>基本偏好</strong>：触控板（轻点点击）、Dock（位置调整），这些都是按照个人习惯任意调整。</li>
+</ol>
+<h2 class="heading" id="开发工具安装策略">
+  开发工具安装策略
+  <a class="anchor" href="#%e5%bc%80%e5%8f%91%e5%b7%a5%e5%85%b7%e5%ae%89%e8%a3%85%e7%ad%96%e7%95%a5">#</a>
+</h2>
+<h3 class="heading" id="1-xcode-command-line-tools">
+  1. Xcode Command Line Tools
+  <a class="anchor" href="#1-xcode-command-line-tools">#</a>
+</h3>
+<p>如果不用 switft 语言开发以及 Apple 相关开发需求的话，完整的 Xcode 就没必要进行安装了，直接安装相应的命令行工具即可。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>xcode-select --install
+</span></span></code></pre></div><p>安装完成后通过 <code>xcode-select -p</code> 确认路径是否正确。如果后续有需求安装了完整 Xcode，也可以重新指定 CLI 工具路径。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>└─&gt; xcode-select -p  
+</span></span><span style="display:flex;"><span>/Library/Developer/CommandLineTools
+</span></span></code></pre></div><h3 class="heading" id="2-homebrew-为核心包管理器">
+  2. Homebrew 为核心包管理器
+  <a class="anchor" href="#2-homebrew-%e4%b8%ba%e6%a0%b8%e5%bf%83%e5%8c%85%e7%ae%a1%e7%90%86%e5%99%a8">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/bash -c <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">## 之后还要加入环境变量（仅供参考，具体看安装完成后的终端信息）</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">echo</span> <span style="color:#666;font-style:italic">&#39;eval &#34;$(/opt/homebrew/bin/brew shellenv)&#34;&#39;</span> &gt;&gt; /Users/asada/.zprofile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">eval</span> <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>/opt/homebrew/bin/brew shellenv<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">&#34;</span>
+</span></span></code></pre></div><p>基础软件包建议：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#888;font-style:italic">## 更新软件包</span>
+</span></span><span style="display:flex;"><span>brew update
+</span></span><span style="display:flex;"><span>brew install git wget curl tree openssl coreutils gnupg
+</span></span></code></pre></div><p>先前安装 openssl@3 的时候会在 <code>make check</code> 阶段发生错误，但我最近重新配置的时候发现又可以直接安装了，只适合提示警告。如果有遇到 <code>make check</code> 报错的情况，可以查看这个讨论进行解决：<a href="https://github.com/openssl/openssl/issues/22467"># openssl@3 fails to build</a>. 思路是类似的。</p>
+<p>至于其他还缺少的软件包，会在 homebrew 安装其他软件时自动补全。</p>
+<blockquote>
+<p>安装 llvm 会非常耗时，大概会持续满载运行 2 - 3 个小时，属于不得不品鉴的一环 —— 当然也可以直接使用官方的预编译包，就是可能得重新配置一下链接上 homebrew，一些细节可以参考<a href="https://www.xiaoledeng.com/2025/10/07/macos-install-llvm/">这篇博文</a>。</p></blockquote>
+<h3 class="heading" id="3-编程语言管理">
+  3. 编程语言管理
+  <a class="anchor" href="#3-%e7%bc%96%e7%a8%8b%e8%af%ad%e8%a8%80%e7%ae%a1%e7%90%86">#</a>
+</h3>
+<p>编译器与包管理器的选择很看个人喜好，我的习惯是尽量“能隔离就隔离”，保证项目之间互不污染，这部分就不过多赘述了。</p>
+<h2 class="heading" id="shell-与终端美化">
+  Shell 与终端美化
+  <a class="anchor" href="#shell-%e4%b8%8e%e7%bb%88%e7%ab%af%e7%be%8e%e5%8c%96">#</a>
+</h2>
+<h3 class="heading" id="1-终端应用与主题">
+  1. 终端应用与主题
+  <a class="anchor" href="#1-%e7%bb%88%e7%ab%af%e5%ba%94%e7%94%a8%e4%b8%8e%e4%b8%bb%e9%a2%98">#</a>
+</h3>
+<p>我依旧使用系统自带的 Terminal.app，挑一份对比度舒适的 <code>Pro</code> 主题做微调：调低透明度、启用自然暗色背景，再为不同 Profile 设定独立配色便于区分远程主机。</p>
+<p>配色之外，真正决定体验的是 <code>.zshrc</code> 的结构，因为在 <code>powershell</code> 上非常喜欢那个<strong>Tokyo</strong>的主题，所以在 macOS 上也尝试用 <strong>oh-my-posh</strong> 渲染提示符：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#888;font-style:italic"># ~/.zshrc（节选）</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">## 基础环境</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">export</span> <span style="color:#666;font-weight:bold;font-style:italic">PATH</span>=<span style="color:#666;font-style:italic">&#34;/opt/homebrew/bin:/opt/homebrew/sbin:</span><span style="color:#666;font-weight:bold;font-style:italic">$PATH</span><span style="color:#666;font-style:italic">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic"># Intel Mac 可改为：/usr/local/bin:/usr/local/sbin</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">## Oh My Zsh</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">export</span> <span style="color:#666;font-weight:bold;font-style:italic">ZSH</span>=<span style="color:#666;font-style:italic">&#34;</span><span style="color:#666;font-weight:bold;font-style:italic">$HOME</span><span style="color:#666;font-style:italic">/.oh-my-zsh&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">ZSH_THEME</span>=<span style="color:#666;font-style:italic">&#34;&#34;</span>  <span style="color:#888;font-style:italic"># 交给 oh-my-posh 管理提示符</span>
+</span></span><span style="display:flex;"><span><span style="color:#666;font-weight:bold;font-style:italic">plugins</span>=(git zsh-autosuggestions fzf zsh-syntax-highlighting autojump thefuck zsh-history-substring-search)
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">source</span> <span style="color:#666;font-style:italic">&#34;</span><span style="color:#666;font-weight:bold;font-style:italic">$ZSH</span><span style="color:#666;font-style:italic">/oh-my-zsh.sh&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">## 外部工具初始化</span>
+</span></span><span style="display:flex;"><span>[[ -f <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>brew --prefix<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">/opt/fzf/shell/completion.zsh&#34;</span> ]] &amp;&amp; <span style="font-weight:bold;font-style:italic">source</span> <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>brew --prefix<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">/opt/fzf/shell/completion.zsh&#34;</span>
+</span></span><span style="display:flex;"><span>[[ -f <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>brew --prefix<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">/opt/fzf/shell/key-bindings.zsh&#34;</span> ]] &amp;&amp; <span style="font-weight:bold;font-style:italic">source</span> <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>brew --prefix<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">/opt/fzf/shell/key-bindings.zsh&#34;</span>
+</span></span><span style="display:flex;"><span>[[ -f <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>brew --prefix<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">/etc/profile.d/autojump.sh&#34;</span> ]] &amp;&amp; <span style="font-weight:bold;font-style:italic">source</span> <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>brew --prefix<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">/etc/profile.d/autojump.sh&#34;</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">command</span> -v thefuck &gt;/dev/null &amp;&amp; <span style="font-weight:bold;font-style:italic">eval</span> <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>thefuck --alias<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">&#34;</span>
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#666;font-style:italic">&#39;^[[A&#39;</span> history-substring-search-up
+</span></span><span style="display:flex;"><span>bindkey <span style="color:#666;font-style:italic">&#39;^[[B&#39;</span> history-substring-search-down
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#888;font-style:italic">## oh-my-posh（终端主题）</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">eval</span> <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>oh-my-posh init zsh --config <span style="color:#666;font-style:italic">&#34;</span><span style="font-weight:bold;text-decoration:underline">$(</span>brew --prefix oh-my-posh<span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">/themes/tokyo.omp.json&#34;</span><span style="font-weight:bold;text-decoration:underline">)</span><span style="color:#666;font-style:italic">&#34;</span>
+</span></span></code></pre></div><h3 class="heading" id="2-字体选择">
+  2. 字体选择
+  <a class="anchor" href="#2-%e5%ad%97%e4%bd%93%e9%80%89%e6%8b%a9">#</a>
+</h3>
+<p>终端提示符塞了很多小图标之后，直接选用带 Nerd 补丁的等宽字体最省心。我个人常驻的是 <strong>ComicShannsMono Nerd Font</strong>：造型有点俏皮，字宽也不是最规整，但习惯后看上去非常放松。若你更看重清晰度，<strong>JetBrainsMono Nerd Font</strong>、<strong>MesloLGS NF</strong> 等会更稳。无论最终选哪一款，字号保持在 13–14pt、适度调大行距，再开启连字，就能在信息密度和可读性之间取得平衡。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="" src="https://blogxiaozheng.oss-cn-beijing.aliyuncs.com/images/20251016174633543.png" >
+    </div>
+
+    
+</figure>
+</p>
+<h2 class="heading" id="网络代理与同步">
+  网络代理与同步
+  <a class="anchor" href="#%e7%bd%91%e7%bb%9c%e4%bb%a3%e7%90%86%e4%b8%8e%e5%90%8c%e6%ad%a5">#</a>
+</h2>
+<h3 class="heading" id="1-系统层代理">
+  1. 系统层代理
+  <a class="anchor" href="#1-%e7%b3%bb%e7%bb%9f%e5%b1%82%e4%bb%a3%e7%90%86">#</a>
+</h3>
+<p>日常使用 <strong>Clash</strong> 作为系统代理，只需要订阅链接或者订阅文件就可以同步。可以安装插件并开启 TUN 模式，就可以接管系统的所有流量。不过还是十分担心我贫瘠的流量（） 所以日常绝大部分情况都是手动挂个回环代理：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="font-weight:bold;font-style:italic">export</span> <span style="color:#666;font-weight:bold;font-style:italic">https_proxy</span>=http://127.0.0.1:7890 <span style="color:#666;font-weight:bold;font-style:italic">http_proxy</span>=http://127.0.0.1:7890 <span style="color:#666;font-weight:bold;font-style:italic">all_proxy</span>=socks5://127.0.0.1:7890
+</span></span></code></pre></div><h2 class="heading" id="结语">
+  结语
+  <a class="anchor" href="#%e7%bb%93%e8%af%ad">#</a>
+</h2>
+<p>在入门款 MBA M1 上，macOS 12.7 的开发体验核心依旧是还是“轻量而稳定”，哪怕以及过去了将近五年。只要把系统维持在可控状态，靠 Homebrew 管好软件包，再配上一套顺手的终端与代理，就足以应付日常开发、记笔记，乃至上课通勤时的零碎工作。说到底，我始终把这台机器当成可靠的伙伴：它还在源源不断地帮我写代码、记生活，这份生产力与情感的价值得让我舍不得换新。既然已经相处出了默契，就继续好好维护它，直到它停止工作的那一刻吧。</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div class="img-container" >
+        <img loading="lazy" alt="" src="https://blogxiaozheng.oss-cn-beijing.aliyuncs.com/images/IMG_8772.jpg" >
+    </div>
+
+    
+</figure>
+</p>
+
+    </div>
+  </article>
+    <div class="single-comments">
+      <script src="https://giscus.app/client.js"
+        data-repo="Xiaozheng03Asada/Xiaozheng03Asada.github.io"
+        data-repo-id="R_kgDOQBKVLg"
+        data-category=""
+        data-category-id="DIC_kwDOQBKVLs4Cwj23"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+    </div>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/">
+                        《魔法使之夜》全成就攻略与游玩心得
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+<footer class="footer">
+  <div class="footer-content">
+    <div id="site-stats">
+      <span id="site-uptime">运行时间：加载中…</span>
+    </div>
+    <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/tomfran/typo">typo</a></p>
+  </div>
+  <style>
+    .footer {
+      font-family: var(--font-body);
+      font-size: var(--p-font-size);
+      line-height: var(--p-line-height);
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      align-items: center;
+    }
+
+    #site-stats {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .footer-content p {
+      margin: 0;
+    }
+  </style>
+  <script src="/js/umami-footer.js" defer></script>
+</footer>
+
+  </footer>
+
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+ 
+</html>

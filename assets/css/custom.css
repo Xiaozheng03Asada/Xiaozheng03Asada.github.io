@@ -1,0 +1,20 @@
+/* Tags terms grid */
+.terms-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 12px; }
+.term-card { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border: 1px solid var(--code-border); border-radius: 8px; text-decoration: none; color: inherit; background: var(--code-background); transition: background .2s, border-color .2s; }
+.term-card:hover { background: var(--background); border-color: var(--content-secondary); }
+.term-name { font-weight: 600; }
+.term-count { font-size: 0.9em; opacity: .8; }
+
+/* Diary page */
+.diary-container { display: flex; flex-direction: column; gap: 32px; padding-bottom: 3rem; }
+.diary-title { margin-bottom: 0; }
+.diary-intro { max-width: 680px; color: var(--content-secondary); line-height: 1.8; }
+.diary-entry { background: var(--code-background); border: 1px solid var(--code-border); border-radius: 14px; padding: 1.6rem; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04); transition: transform .2s ease, box-shadow .2s ease; }
+.diary-entry:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06); }
+.diary-entry-header { display: flex; flex-direction: column; gap: .35rem; margin-bottom: 1rem; }
+.diary-entry-title { margin: 0; font-size: 1.3rem; line-height: 1.45; }
+.diary-entry-date { margin: 0; color: var(--content-secondary); font-size: 0.95rem; letter-spacing: 0.02em; }
+.diary-entry-content :is(p, ul, ol, blockquote, pre, figure, table):first-child { margin-top: 0; }
+.diary-entry-content :is(p, ul, ol, blockquote, pre, figure, table):last-child { margin-bottom: 0; }
+.diary-entry + .diary-entry { margin-top: 8px; }
+.diary-empty { color: var(--content-secondary); }
