@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日记 on 小郑的自留地</title>
-    <link>http://localhost:1313/diary/</link>
+    <link>https://blogxiaozheng.site/diary/</link>
     <description>Recent content in 日记 on 小郑的自留地</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 17 Oct 2025 17:34:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/diary/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blogxiaozheng.site/diary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开篇</title>
-      <link>http://localhost:1313/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</link>
+      <link>https://blogxiaozheng.site/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</link>
       <pubDate>Fri, 17 Oct 2025 17:34:00 +0800</pubDate>
-      <guid>http://localhost:1313/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</guid>
+      <guid>https://blogxiaozheng.site/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</guid>
       <description>&lt;p&gt;今天把新的日记页搭起来，总算有了一个可以随手落笔的地方。  （&lt;del&gt;其实是水 commit 的地方&lt;/del&gt;）&#xA;下次更新时，只要在 &lt;code&gt;content/diary/&lt;/code&gt; 目录里再添一篇 Markdown 文件，就能自动出现在列表最上方。&#xA;不得不感慨，Agent 真的特别好用，以至于有了要一直用赚回本的错觉（&lt;/p&gt;</description>
     </item>
   </channel>

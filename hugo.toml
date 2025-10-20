@@ -65,15 +65,19 @@ name = "分类"
 url = "/tags"
 
 [[params.menu]]
-name = "时间轴"
-url = "/posts"
-
-[[params.menu]]
 name = "日记"
 url = "/diary"
 
 [[params.menu]]
-name = "关于"
+name = "时间轴"
+url = "/posts"
+
+[[params.menu]]
+name = "友人帐"
+url = "/friends"
+
+[[params.menu]]
+name = "关于我"
 url = "/about"
 
 # Syntax highlight on code blocks
