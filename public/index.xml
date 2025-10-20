@@ -2,53 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on 小郑的自留地</title>
-    <link>https://blogxiaozheng.site/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on 小郑的自留地</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 17 Oct 2025 17:34:00 +0800</lastBuildDate>
-    <atom:link href="https://blogxiaozheng.site/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开篇</title>
-      <link>https://blogxiaozheng.site/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</link>
+      <link>http://localhost:1313/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</link>
       <pubDate>Fri, 17 Oct 2025 17:34:00 +0800</pubDate>
-      <guid>https://blogxiaozheng.site/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</guid>
-      <description>&lt;p&gt;今天把新的日记页搭起来，总算有了一个可以随手落笔的地方。  （&lt;del&gt;其实是水 commit 的地方&lt;/del&gt;）&#xA;下次更新时，只要在 &lt;code&gt;content/diary/&lt;/code&gt; 目录里再添一篇 Markdown 文件，就能自动出现在列表最上方。&#xA;不得不感慨，Agent 真的特别好用，以至于有了要一直用赚回本的错觉（&lt;/p&gt;</description>
+      <guid>http://localhost:1313/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</guid>
+      <description>&lt;p&gt;今天把新的日记页搭起来，总算有了一个可以随手落笔的地方。  （&lt;del&gt;其实是水 commit 的地方&lt;/del&gt;）&lt;/p&gt;&#xA;&lt;p&gt;下次更新时，只要在 &lt;code&gt;content/diary/&lt;/code&gt; 目录里再添一篇 Markdown 文件，就能自动出现在列表最上方。&#xA;不得不感慨，Agent 真的特别好用，以至于有了要一直用赚回本的错觉（&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 开发环境配置指北</title>
-      <link>https://blogxiaozheng.site/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</link>
+      <link>http://localhost:1313/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</link>
       <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://blogxiaozheng.site/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</guid>
+      <guid>http://localhost:1313/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</guid>
       <description>在入门款 MBA M1 上搭建 macOS 12.7 的日常开发工作流记录</description>
     </item>
     <item>
       <title>《魔法使之夜》全成就攻略与游玩心得</title>
-      <link>https://blogxiaozheng.site/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</link>
+      <link>http://localhost:1313/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</link>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://blogxiaozheng.site/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</guid>
+      <guid>http://localhost:1313/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</guid>
       <description>安利性质的攻略记录与游玩心得分享</description>
     </item>
     <item>
+      <title>论文阅读：Between Lines of Code——Unraveling the Distinct Patterns of Machine and Human Programmers</title>
+      <link>http://localhost:1313/garden/2025-07-09-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBbetween-lines-of-code-unraveling-the-distinct-patterns-of-machine-and-human-programmers/</link>
+      <pubDate>Wed, 09 Jul 2025 08:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/garden/2025-07-09-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBbetween-lines-of-code-unraveling-the-distinct-patterns-of-machine-and-human-programmers/</guid>
+      <description>&lt;p&gt;这段时间在鸭大暑研，时间比较清闲。没事就不由自主多读完了几篇论文。有空的话我就多记录一下吧。&lt;br&gt;&#xA;平时一般会关注软件工程领域居多，翻一下A会A刊有没有适合的论文。&lt;br&gt;&#xA;这篇是关于大模型检测的，来自ISCE25.&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;i-introduction&#34;&gt;&#xA;  I. Introduction&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#i-introduction&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;大型语言模型（LLM）如 Codex 和 ChatGPT，通过在海量代码语料上训练，能够生成语法和功能均正确的代码，极大提升了软件开发的效率与创新能力。然而，这也带来了“人机代码混淆”问题：无法轻易区分代码是人类还是机器所写，进而导致代码归属混淆、漏洞追责困难、工作量评估失真等诚信与安全风险。由于过度依赖其感知的鲁棒性，机器生成的代码中的潜在漏洞可能被忽视。其中真正的作者身份和创建软件制品所投入的努力变得模糊不清。解决这些问题对于维护透明和安全的软件开发生命周期至关重要。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;基于扰动的检测方法&lt;/strong&gt;，如DetectGPT，在识别机器生成文本方面取得了最先进的结果：通过比较原始文本及其各种LLM扰动变体之间的似然分数差异来进行检测。&lt;/p&gt;&#xA;&lt;p&gt;然而，这种针对自然语言文本的检测方法在应用于代码时面临挑战，因为代码需要严格遵守句法规则，而自然语言可以保持更多变异性。这种情况突显了现有研究中的一个重大差距：&lt;strong&gt;缺乏对机器和人类编写代码的内在特征的深入评估&lt;/strong&gt;，这对于理解机器生成代码的独特模式和制定有效的检测方法至关重要。&lt;/p&gt;&#xA;&lt;p&gt;在这篇论文中，我们从三个方面对机器编写和人工编写的代码的差异性模式进行了比较分析，包括词汇多样性、简洁性和自然性。通过我们的分析，我们发现与人类相比，机器倾向于编写更加简洁和自然的代码，其标记范围较窄，并遵循常见的编程范式，这种差异在风格标记，如空白标记中更为明显。&lt;/p&gt;&#xA;&lt;p&gt;提出了一种名为DetectCodeGPT的新方法，用于检测机器编写的代码。我们通过战略性地插入风格化标记，扩展了DetectGPT的基于扰动的框架：针对性地插入空格与换行的“样式扰动”策略，以捕捉机器生成代码在空白字符等方面的刻板模式，实现无需外部模型、零样本的高效检测。&lt;/p&gt;&#xA;&lt;p&gt;为了评估DetectCodeGPT的有效性，我们在两个数据集上对六个代码语言模型进行了广泛的实验。结果表明，DetectCodeGPT在&lt;strong&gt;AUROC&lt;/strong&gt;这个指标上显著优于最先进的方法，证明是一种无模型且对模型差异鲁棒的方法。&lt;/p&gt;&#xA;&lt;p&gt;本文贡献：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;首篇对LLM生成的代码的独立模式进行全面深入分析。进一步推进LLM在编程中应用的重要见解。&lt;/li&gt;&#xA;&lt;li&gt;提出了一种检测机器生成代码的新方法。&lt;/li&gt;&#xA;&lt;li&gt;在多种设置下广泛评估了DetectCodeGPT，并展示了我们方法的有效性。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;ii-background&#34;&gt;&#xA;  II. Background&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#ii-background&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;a-large-language-models-for-code&#34;&gt;&#xA;  A. Large Language Models for Code&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#a-large-language-models-for-code&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;基于 Transformer 解码器的大语言模型在自然语言处理任务中取得了显著的成功。在代码生成领域， Codex 和 AlphaCode 是训练大型语言模型在代码上的开创性工作。后来，为增强模型的代码理解与生成能力，研究者提出了“填空式中段”（ fill-in-the-middle ）预训练任务，以及基于指令的微调方法。最新一代模型（ ChatGPT 、 LLaMA ）在编程语言与自然语言上同时预训练，进一步提升了跨语言的代码生成效果。&lt;/p&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;b-perturbation-based-detection-of-machine-generated-text&#34;&gt;&#xA;  B. Perturbation-Based Detection of Machine-Generated Text&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#b-perturbation-based-detection-of-machine-generated-text&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;在机器生成文本检测领域，基于扰动的 DetectGPT 方法已成为最先进的技术。核心思想是：对机器生成的文本 x 施加微小扰动 $q(\cdot | x)$ 得到 $\widetilde{x}$ 时，其对数概率 $\log p_\theta(x)$ 的下降幅度要明显大于人类文本。这是因为机器生成的文本通常更可预测、更贴合训练模式，因此在扰动下会表现出明显的负曲率（log 概率急剧下降）。相比之下，人类撰写的文本具有更丰富多样的风格，反映了多元的经验与认知过程，所以在相同扰动下，人类文本的 $\log p_\theta(x)$ 不会出现如此剧烈的下降。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>音击手台静音方案探索尝试</title>
-      <link>https://blogxiaozheng.site/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</link>
+      <link>http://localhost:1313/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</link>
       <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://blogxiaozheng.site/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</guid>
+      <guid>http://localhost:1313/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</guid>
       <description>一些小手工</description>
     </item>
     <item>
       <title>从零开始使用Github Pages &#43; Jekyll搭建博客</title>
-      <link>https://blogxiaozheng.site/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://blogxiaozheng.site/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>本篇其实是课程作业 —— 上一篇博客的初始化</description>
     </item>
     <item>
       <title>关于我</title>
-      <link>https://blogxiaozheng.site/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://blogxiaozheng.site/about/</guid>
-      <description>&lt;p&gt;你好，我是小郑。&lt;/p&gt;&#xA;&lt;p&gt;这个小房间是我放慢脚步的角落，偶尔把散乱的念头写下来，让它们在这里慢慢沉淀。&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;我在这里做什么&#34;&gt;&#xA;  我在这里做什么&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%88%91%e5%9c%a8%e8%bf%99%e9%87%8c%e5%81%9a%e4%bb%80%e4%b9%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;记录那些值得回味的想法与方法&lt;/li&gt;&#xA;&lt;li&gt;写写日常的观察和情绪片段&lt;/li&gt;&#xA;&lt;li&gt;偶尔分享与兴趣、灵感有关的随笔&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;想对你说&#34;&gt;&#xA;  想对你说&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%83%b3%e5%af%b9%e4%bd%a0%e8%af%b4&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;谢谢你停留。如果这些字句与你产生共鸣，欢迎在评论区或订阅渠道留下声响，我会在适合的时候回应。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;你好，我是小郑。&lt;/p&gt;&#xA;&lt;p&gt;这个小房间，是我放慢脚步的角落。&lt;br&gt;&#xA;在这里，我和文字对坐，记录那些不想被时间冲淡的念头。&lt;br&gt;&#xA;有时候是日常的一点微光，有时候是思考的碎片，也有时候只是情绪的自我整理。&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;我在这里做什么&#34;&gt;&#xA;  我在这里做什么&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%88%91%e5%9c%a8%e8%bf%99%e9%87%8c%e5%81%9a%e4%bb%80%e4%b9%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;记录值得反复咀嚼的想法、阅读和方法&lt;/li&gt;&#xA;&lt;li&gt;写下日常生活的温度、片段与留白&lt;/li&gt;&#xA;&lt;li&gt;分享一些兴趣与灵感：书、影、音、游、旅途、学习&lt;/li&gt;&#xA;&lt;li&gt;&lt;del&gt;还有的没想好&lt;/del&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;想对你说&#34;&gt;&#xA;  想对你说&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%83%b3%e5%af%b9%e4%bd%a0%e8%af%b4&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;谢谢你停留在这里。&lt;br&gt;&#xA;在这个嘈杂的世界里，能与你短暂地相遇，本身就是温柔的巧合。&lt;br&gt;&#xA;欢迎留下自己的足迹～&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;愿我们都能在自己的小房间里，找到平静与真诚。&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>

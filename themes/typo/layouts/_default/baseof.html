@@ -15,21 +15,29 @@
 <body class="{{ $theme }}">
 
   <div class="content">
+    {{ if not (eq .Section "garden") }}
     <header>
       {{ partial "header.html" . }}
     </header>
+    {{ end }}
 
-    <main class="main">
-      {{ block "main" . }}{{ end }}
+    <main class="main {{ if eq .Section "garden" }}main--garden{{ end }}">
+      {{ if eq .Section "garden" }}
+        {{ block "gardenMain" . }}{{ end }}
+      {{ else }}
+        {{ block "main" . }}{{ end }}
+      {{ end }}
     </main>
   </div>
 
   {{/* Body end hook */}}
   {{ partial "functions/get_hook.html" (dict "hook" "body_end" "context" .) }}
 
+  {{ if not (eq .Section "garden") }}
   <footer>
     {{ partial "footer.html" . }}
   </footer>
+  {{ end }}
 
   {{ if .Param "math" }}
   {{ partialCached "math.html" . }}

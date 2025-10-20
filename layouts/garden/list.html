@@ -1,0 +1,56 @@
+{{ define "gardenMain" }}
+{{ $current := .RelPermalink }}
+{{ $gardenPages := sort (where site.RegularPages "Section" "garden") "Date" "desc" }}
+
+<div class="garden-layout">
+  <aside class="garden-sidebar">
+    <section class="garden-sidebar-section">
+      <h2 class="garden-sidebar-heading">全部文章</h2>
+      <ul class="garden-posts">
+        <li class="garden-posts-item garden-posts-item--home">
+          {{ $isCurrent := eq .RelPermalink $current }}
+          <a class="garden-posts-link garden-posts-link--home {{ if $isCurrent }}is-active{{ end }}" href="{{ .RelPermalink }}">
+            <span class="garden-posts-title">首页</span>
+          </a>
+        </li>
+        {{ range $gardenPages }}
+        <li class="garden-posts-item">
+          <a class="garden-posts-link {{ if eq .RelPermalink $current }}is-active{{ end }}" href="{{ .RelPermalink }}">
+            <span class="garden-posts-title">{{ .LinkTitle }}</span>
+            {{ with .Date }}
+            {{- $machine := . | time.Format "2006-01-02" -}}
+            <time class="garden-posts-date" datetime="{{ $machine }}">{{ $machine }}</time>
+            {{ end }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+
+    <section class="garden-sidebar-section">
+      <h2 class="garden-sidebar-heading">目录</h2>
+      {{ with .TableOfContents }}
+      <div class="garden-toc">
+        {{ . | safeHTML }}
+      </div>
+      {{ else }}
+      <p class="garden-toc-empty">暂无可用目录。</p>
+      {{ end }}
+    </section>
+  </aside>
+
+  <article class="garden-article">
+    <a class="garden-back-button" href="/">← 返回博客</a>
+    <header class="garden-article-header">
+      <h1 class="garden-title">{{ .Title }}</h1>
+      {{ with .Description }}
+      <p class="garden-description">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <div class="garden-content">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
+{{ end }}
