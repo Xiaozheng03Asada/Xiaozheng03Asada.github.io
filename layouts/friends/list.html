@@ -18,8 +18,47 @@
   {{ if $friends }}
   <section class="friends-grid">
     {{ range sort $friends "name" }}
-    {{ $avatar := default "" .avatar }}
-    {{ $hasAvatar := ne (trim $avatar " ") "" }}
+    {{/* 优先使用手动设置的头像，缺省时尝试使用本地缓存的 favicon */}}
+    {{ $rawAvatar := trim (default "" .avatar) " " }}
+    {{ $avatarURL := "" }}
+    {{ if ne $rawAvatar "" }}
+    {{ if or (hasPrefix $rawAvatar "http://") (hasPrefix $rawAvatar "https://") }}
+    {{ $avatarURL = $rawAvatar }}
+    {{ else }}
+    {{ $avatarURL = relURL $rawAvatar }}
+    {{ end }}
+    {{ else }}
+    {{ $host := "" }}
+    {{ with .url }}
+    {{ $parsed := urls.Parse . }}
+    {{ if $parsed.Host }}
+    {{ $host = $parsed.Host }}
+    {{ else }}
+    {{ $trimmed := trim . "/" }}
+    {{ if ne $trimmed "" }}
+    {{ $host = index (split $trimmed "/") 0 }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    {{ $host = lower (replaceRE ":.*$" "" $host) }}
+    {{ if ne $host "" }}
+    {{ $hostKey := replace $host ":" "_" }}
+    {{ $localAvatar := "" }}
+    {{ $iconExts := slice "png" "jpg" "jpeg" "ico" "svg" "webp" }}
+    {{ range $iconExts }}
+    {{ if eq $localAvatar "" }}
+    {{ $candidate := printf "static/friends/icons/%s.%s" $hostKey . }}
+    {{ if fileExists $candidate }}
+    {{ $localAvatar = printf "/friends/icons/%s.%s" $hostKey . }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    {{ if ne $localAvatar "" }}
+    {{ $avatarURL = relURL $localAvatar }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    {{ $hasAvatar := ne $avatarURL "" }}
     {{ $initial := "" }}
     {{ with .name }}
     {{ if gt (len .) 0 }}
@@ -29,11 +68,7 @@
     <a class="friend-card" href="{{ .url }}" target="_blank" rel="noopener">
       <div class="friend-avatar">
         {{ if $hasAvatar }}
-        {{ if or (hasPrefix $avatar "http://") (hasPrefix $avatar "https://") }}
-        <img src="{{ $avatar }}" alt="{{ .name }}">
-        {{ else }}
-        <img src="{{ $avatar | relURL }}" alt="{{ .name }}">
-        {{ end }}
+        <img src="{{ $avatarURL }}" alt="{{ .name }}">
         {{ else }}
         <span class="friend-avatar-placeholder">{{ $initial }}</span>
         {{ end }}
