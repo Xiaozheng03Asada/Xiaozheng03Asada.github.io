@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得"
+              "title": "about"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
+                "file": "about.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-10-14-《魔法使之夜》全成就攻略与游玩心得 的大纲"
+              "title": "about 的大纲"
             }
           },
           {
@@ -152,6 +152,7 @@
   },
   "active": "cfaad0ebd34fc456",
   "lastOpenFiles": [
+    "posts/2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
     "garden/_index.md",
     "garden/2025-07-09-论文阅读“Between Lines of Code—— Unraveling the Distinct Patterns of Machine and Human Programmers”.md",
     "garden/index.md",
@@ -166,7 +167,6 @@
     "about.md",
     "未命名.canvas",
     "未命名.base",
-    "posts/2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
     "diary/2024-05-10-春风.md",
     "tags/_index.md"
   ]
