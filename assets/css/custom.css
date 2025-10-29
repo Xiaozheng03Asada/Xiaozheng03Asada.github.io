@@ -85,7 +85,11 @@ body.garden-page .main { flex: 1; }
 .garden-sidebar-heading { margin: 0 0 .45rem; font-size: .95rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--content-secondary); }
 .garden-posts { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .35rem; }
 .garden-posts-item { width: 100%; padding: 0; }
-.garden-posts-item--home { margin-bottom: .35rem; padding-bottom: .35rem; border-bottom: 1px dashed var(--code-border); }
+.garden-posts-item--home {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
 .garden-posts-link { position: relative; display: flex; flex-direction: column; gap: .18rem; padding: .18rem 0; text-decoration: none; color: inherit; transition: color .2s ease; font-size: .85rem; }
 .garden-posts-link::before { content: ""; position: absolute; left: -1.1rem; top: 0; bottom: 0; width: 2px; border-radius: 999px; background: transparent; transition: background .2s ease; }
 .garden-posts-link--home { font-weight: 700; font-size: .95rem; padding-left: 0; }
