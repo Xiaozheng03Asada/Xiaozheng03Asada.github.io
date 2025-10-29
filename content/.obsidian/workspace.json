@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "82d15effc4226804",
+        "id": "fcfa2328c3d7e06f",
         "type": "tabs",
         "children": [
           {
-            "id": "cfaad0ebd34fc456",
+            "id": "9f93eb1195cf740a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2025-10-28-《传送门》全成就指南与心得分享.md",
+                "file": "garden/_index.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-28-《传送门》全成就指南与心得分享"
+              "title": "_index"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/2025-10-28-《传送门》全成就指南与心得分享.md",
+                "file": "garden/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-10-28-《传送门》全成就指南与心得分享 的大纲"
+              "title": "_index 的大纲"
             }
           },
           {
@@ -150,16 +150,17 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "cfaad0ebd34fc456",
+  "active": "9f93eb1195cf740a",
   "lastOpenFiles": [
-    "posts/2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
-    "posts/2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
+    "garden/2025-07-21-论文阅读“Towards Understanding the Characteristics of Code Generation Errors Made by Large Language Models”.md",
     "posts/2025-05-07-音击手台静音方案尝试.md",
-    "posts/2025-10-15-macOS开发环境配置指北.md",
+    "diary/2025-10-17-起笔.md",
+    "posts/2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
     "posts/2025-10-28-《传送门》全成就指南与心得分享.md",
+    "posts/2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
+    "posts/2025-10-15-macOS开发环境配置指北.md",
     "about.md",
     "diary/_index.md",
-    "diary/2025-10-17-起笔.md",
     "garden/_index.md",
     "garden/2025-07-09-论文阅读“Between Lines of Code—— Unraveling the Distinct Patterns of Machine and Human Programmers”.md",
     "garden/index.md",
