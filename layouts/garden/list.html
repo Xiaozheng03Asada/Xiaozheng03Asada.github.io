@@ -7,9 +7,9 @@
     <section class="garden-sidebar-section">
       <h2 class="garden-sidebar-heading">全部文章</h2>
       <ul class="garden-posts">
-        <li class="garden-posts-item garden-posts-item--home">
+        <li class="garden-posts-item">
           {{ $isCurrent := eq .RelPermalink $current }}
-          <a class="garden-posts-link garden-posts-link--home {{ if $isCurrent }}is-active{{ end }}" href="{{ .RelPermalink }}">
+          <a class="garden-posts-link {{ if $isCurrent }}is-active{{ end }}" href="{{ .RelPermalink }}">
             <span class="garden-posts-title">首页</span>
           </a>
         </li>
