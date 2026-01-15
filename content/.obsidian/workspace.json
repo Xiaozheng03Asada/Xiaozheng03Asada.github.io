@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "diary/2025-12-04.md",
+                "file": "diary/2026-01-14.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2025-12-04"
+              "title": "2026-01-14"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "diary/2025-12-04.md",
+                "file": "diary/2026-01-14.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-12-04 的大纲"
+              "title": "2026-01-14 的大纲"
             }
           },
           {
@@ -153,9 +153,10 @@
   "active": "9f93eb1195cf740a",
   "lastOpenFiles": [
     "diary/2025-10-17-起笔.md",
+    "diary/2026-01-14.md",
     "diary/2025-12-04.md",
-    "garden/2025-07-21-论文阅读“Towards Understanding the Characteristics of Code Generation Errors Made by Large Language Models”.md",
     "diary/未命名.md",
+    "garden/2025-07-21-论文阅读“Towards Understanding the Characteristics of Code Generation Errors Made by Large Language Models”.md",
     "diary/_index.md",
     "friends/_index.md",
     "garden/2025-07-09-论文阅读“Between Lines of Code—— Unraveling the Distinct Patterns of Machine and Human Programmers”.md",
