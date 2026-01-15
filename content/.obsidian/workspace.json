@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "garden/_index.md",
+                "file": "diary/2025-12-04.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "2025-12-04"
             }
           }
         ]
@@ -95,13 +95,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "garden/_index.md",
+                "file": "diary/2025-12-04.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_index 的大纲"
+              "title": "2025-12-04 的大纲"
             }
           },
           {
@@ -152,20 +152,22 @@
   },
   "active": "9f93eb1195cf740a",
   "lastOpenFiles": [
-    "garden/2025-07-21-论文阅读“Towards Understanding the Characteristics of Code Generation Errors Made by Large Language Models”.md",
-    "posts/2025-05-07-音击手台静音方案尝试.md",
     "diary/2025-10-17-起笔.md",
+    "diary/2025-12-04.md",
+    "garden/2025-07-21-论文阅读“Towards Understanding the Characteristics of Code Generation Errors Made by Large Language Models”.md",
+    "diary/未命名.md",
+    "diary/_index.md",
+    "friends/_index.md",
+    "garden/2025-07-09-论文阅读“Between Lines of Code—— Unraveling the Distinct Patterns of Machine and Human Programmers”.md",
+    "posts/2025-05-07-音击手台静音方案尝试.md",
+    "posts/2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
+    "garden/_index.md",
     "posts/2025-10-14-《魔法使之夜》全成就攻略与游玩心得.md",
     "posts/2025-10-28-《传送门》全成就指南与心得分享.md",
-    "posts/2025-03-12-从零开始使用Github Pages + Jekyll搭建博客.md",
     "posts/2025-10-15-macOS开发环境配置指北.md",
     "about.md",
-    "diary/_index.md",
-    "garden/_index.md",
-    "garden/2025-07-09-论文阅读“Between Lines of Code—— Unraveling the Distinct Patterns of Machine and Human Programmers”.md",
     "garden/index.md",
     "garden",
-    "friends/_index.md",
     "friends",
     "未命名.canvas",
     "未命名.base",
