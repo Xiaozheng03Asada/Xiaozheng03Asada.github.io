@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunwu Zheng's Homepage</title>
+    <meta name="description" content="Kunwu Zheng is an undergraduate student at Shandong University. His research focuses on AI for Software Engineering (AI4SE), particularly on evaluating and improving Large Language Models for code-related tasks.">
+    <meta name="keywords" content="Kunwu Zheng, Software Engineering, AI4SE, Large Language Models, Code Translation, Shandong University">
+    <meta name="author" content="Kunwu Zheng">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://blogxiaozheng.site/cv/">
+    <meta property="og:title" content="Kunwu Zheng's Homepage">
+    <meta property="og:description" content="Undergraduate student researching AI for Software Engineering at Shandong University.">
+    <meta property="og:url" content="https://blogxiaozheng.site/cv/">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Kunwu Zheng",
+            "alternateName": "郑坤武",
+            "url": "https://blogxiaozheng.site/cv/",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Shandong University",
+                "url": "https://www.sdu.edu.cn"
+            },
+            "jobTitle": "Undergraduate Student",
+            "email": "xiaozhengsdu2022@mail.sdu.edu.cn",
+            "sameAs": [
+                "https://github.com/Xiaozheng03Asada/"
+            ]
+        }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            padding: 30px 20px;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #551A8B;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            gap: 40px;
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            font-size: 13px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 180px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .affiliation {
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .contact {
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            margin-bottom: 4px;
+        }
+
+        .links {
+            margin-top: 15px;
+        }
+
+        .links a {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* Main Content */
+        .main {
+            padding-top: 0;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        /* News */
+        .news-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .news-item {
+            margin-bottom: 6px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .news-icon {
+            flex-shrink: 0;
+            width: 20px;
+            text-align: center;
+        }
+
+        .news-content {
+            flex: 1;
+        }
+
+        /* Publications & Projects */
+        .pub-list, .project-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pub, .project {
+            margin-bottom: 18px;
+        }
+
+        .pub:last-child, .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .pub-title, .project-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .pub-authors {
+            margin-bottom: 2px;
+        }
+
+        .pub-note {
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+
+        .pub-venue {
+            font-style: italic;
+            margin-bottom: 2px;
+        }
+
+        .pub-links, .project-links {
+            font-size: 13px;
+        }
+
+        .pub-links a, .project-links a {
+            margin-right: 8px;
+        }
+
+        /* Projects specific */
+        .project-desc {
+            margin-top: 4px;
+            color: #333;
+        }
+
+        /* Honors */
+        .honor-list {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .honor-item {
+            margin-bottom: 8px;
+            padding-left: 4px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 1px solid #ccc;
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .layout {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .sidebar {
+                text-align: center;
+            }
+
+            .profile-img {
+                margin: 0 auto 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="layout">
+
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <div class="profile-img">[Photo]</div>
+
+                <div class="name">Kunwu Zheng</div>
+
+                <div class="affiliation">
+                    Undergraduate Student<br>
+                    School of Information Science and Engineering<br>
+                    Shandong University
+                </div>
+
+                <div class="contact">
+                    <div class="contact-item">xiaozhengsdu2022 [at] mail.sdu.edu.cn</div>
+                </div>
+
+                <div class="links">
+                    <a href="https://github.com/Xiaozheng03Asada/">GitHub</a>
+                    <a href="https://blogxiaozheng.site/">Blog</a>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="main">
+
+                <!-- About -->
+                <section id="about">
+                    <h2>😉 About Me</h2>
+                    <p>
+                        I am an undergraduate student pursuing dual degrees in Electronic Science and Technology and Administrative Management at Shandong University. My research interests lie in the intersection of Large Language Models (LLMs) and Software Engineering, particularly in code translation, automated program repair, and automated program understanding.
+                    </p>
+                </section>
+
+                <!-- News -->
+                <section id="news">
+                    <h2>News</h2>
+                    <ul class="news-list">
+                        <li class="news-item">
+                            <span class="news-icon">🎉</span>
+                            <span class="news-content"><strong>Dec 2025:</strong> One paper accepted to the ACM International Conference on the Foundations of Software Engineering (FSE'26)!</span>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-icon">☀️</span>
+                            <span class="news-content"><strong>July 2025:</strong> Had a wonderful summer visiting Sun Yat-sen University as a research intern, exploring LLM applications in software engineering.</span>
+                        </li>
+                        <li class="news-item">
+                            <span class="news-icon">🎓</span>
+                            <span class="news-content"><strong>Sept 2022:</strong> Started my undergraduate journey at Shandong University, embarking on an adventure in both engineering and management.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Publications -->
+                <section id="publications">
+                    <h2>Publications</h2>
+                    <ul class="pub-list">
+                        <!-- Publication Template: Copy and modify this block for new papers -->
+                        <li class="pub">
+                            <div class="pub-title">TransLibEval: Demystifying LLMs' Capability in TPL-targeted Code Translation</div>
+                            <div class="pub-authors">
+                                Pengyu Xue*, <strong>Kunwu Zheng*</strong>, Zhen Yang<sup>&dagger;</sup>, Yifei Pei, Linhao Wu, Jiahui Dong, Xiapu Luo, Yan Xiao, Fei Liu, Yuxuan Zhang, Xiran Lyu, Xianhang Li, Xuanyu Zhu, Chengyi Wang
+                            </div>
+                            <div class="pub-note">* Equal contribution &nbsp;&nbsp;&dagger; Corresponding author</div>
+                            <div class="pub-venue">In Proceedings of the 2026 ACM International Conference on the Foundations of Software Engineering (FSE 2026) (CCF-A, Top 9.5%)</div>
+                            <div class="pub-links">
+                                <a href="https://arxiv.org/abs/2509.12087">[arXiv]</a>
+                                <a href="https://github.com/Xiaozheng03Asada/TransLibEval">[Code]</a>
+                            </div>
+                        </li>
+                        <!-- Add new publications above this line -->
+                    </ul>
+                </section>
+
+                <!-- Working Papers / Under Review (Optional) -->
+                <!--
+                <section id="manuscripts">
+                    <h2>Working Papers</h2>
+                    <ul class="pub-list">
+                        <li class="pub">
+                            <div class="pub-title">Paper Title Here</div>
+                            <div class="pub-authors">Author List</div>
+                            <div class="pub-venue">Under review at Conference/Journal</div>
+                            <div class="pub-links">
+                                <a href="#">[arXiv]</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                -->
+
+                <!-- Projects (Optional) -->
+                <!--
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <ul class="project-list">
+                        <li class="project">
+                            <div class="project-title">Project Name</div>
+                            <div class="project-links">
+                                <a href="#">[Website]</a>
+                                <a href="#">[Code]</a>
+                            </div>
+                            <div class="project-desc">
+                                Brief description of the project.
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                -->
+
+                <!-- Honors -->
+                <section id="honors">
+                    <h2>Honors</h2>
+                    <ul class="honor-list">
+                        <li class="honor-item">Second-Class Academic Scholarship, Shandong University</li>
+                        <li class="honor-item">First Prize (Provincial), Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM), 2023 & 2024</li>
+                        <li class="honor-item">The 13th National University Mock Mayor Competition</li>
+                    </ul>
+                </section>
+
+                <!-- Footer -->
+                <footer>
+                    Last updated: February 2026
+                </footer>
+
+            </main>
+        </div>
+    </div>
+</body>
+</html>
