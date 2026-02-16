@@ -81,6 +81,11 @@ name = "友人帐"
 url = "/friends"
 
 [[params.menu]]
+name = "学术主页"
+url = "/cv/"
+newTab = true
+
+[[params.menu]]
 name = "关于我"
 url = "/about"
 

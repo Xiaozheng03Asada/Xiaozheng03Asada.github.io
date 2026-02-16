@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on 小郑的自留地</title>
-    <link>http://localhost:53321/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on 小郑的自留地</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 14 Jan 2026 17:34:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:53321/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>除了菜什么都不剩了www</title>
-      <link>http://localhost:53321/diary/2026-01-14/</link>
+      <link>http://localhost:1313/diary/2026-01-14/</link>
       <pubDate>Wed, 14 Jan 2026 17:34:00 +0800</pubDate>
-      <guid>http://localhost:53321/diary/2026-01-14/</guid>
+      <guid>http://localhost:1313/diary/2026-01-14/</guid>
       <description>&lt;p&gt;别的老师评价做的工作不过 crazy，说的确实好有道理，不过本科生能做出什么惊世骇俗的成果嘛www&lt;/p&gt;</description>
     </item>
     <item>
       <title>摸个鱼</title>
-      <link>http://localhost:53321/diary/2025-12-04/</link>
+      <link>http://localhost:1313/diary/2025-12-04/</link>
       <pubDate>Thu, 04 Dec 2025 17:34:00 +0800</pubDate>
-      <guid>http://localhost:53321/diary/2025-12-04/</guid>
+      <guid>http://localhost:1313/diary/2025-12-04/</guid>
       <description>&lt;p&gt;没绷住快两个月没提交了（（（&lt;/p&gt;&#xA;&lt;p&gt;果然拖延症是治疗不好的&lt;/p&gt;</description>
     </item>
     <item>
       <title>《传送门》全成就指南与心得分享</title>
-      <link>http://localhost:53321/posts/2025-10-28-%E4%BC%A0%E9%80%81%E9%97%A8%E5%85%A8%E6%88%90%E5%B0%B1%E6%8C%87%E5%8D%97%E4%B8%8E%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/</link>
+      <link>http://localhost:1313/posts/2025-10-28-%E4%BC%A0%E9%80%81%E9%97%A8%E5%85%A8%E6%88%90%E5%B0%B1%E6%8C%87%E5%8D%97%E4%B8%8E%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/</link>
       <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53321/posts/2025-10-28-%E4%BC%A0%E9%80%81%E9%97%A8%E5%85%A8%E6%88%90%E5%B0%B1%E6%8C%87%E5%8D%97%E4%B8%8E%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/</guid>
+      <guid>http://localhost:1313/posts/2025-10-28-%E4%BC%A0%E9%80%81%E9%97%A8%E5%85%A8%E6%88%90%E5%B0%B1%E6%8C%87%E5%8D%97%E4%B8%8E%E5%BF%83%E5%BE%97%E5%88%86%E4%BA%AB/</guid>
       <description>从入门通关到挑战模式，整理《传送门》系列的全成就经验与心法</description>
     </item>
     <item>
       <title>开篇</title>
-      <link>http://localhost:53321/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</link>
+      <link>http://localhost:1313/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</link>
       <pubDate>Fri, 17 Oct 2025 17:34:00 +0800</pubDate>
-      <guid>http://localhost:53321/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</guid>
+      <guid>http://localhost:1313/diary/2025-10-17-%E8%B5%B7%E7%AC%94/</guid>
       <description>&lt;p&gt;今天把新的日记页搭起来，总算有了一个可以随手落笔的地方。  （&lt;del&gt;其实是水 commit 的地方&lt;/del&gt;）&lt;/p&gt;&#xA;&lt;p&gt;下次更新时，只要在 &lt;code&gt;content/diary/&lt;/code&gt; 目录里再添一篇 Markdown 文件，就能自动出现在列表最上方。&#xA;不得不感慨，Agent 真的特别好用，以至于有了要一直用赚回本的错觉（&lt;/p&gt;</description>
     </item>
     <item>
       <title>macOS 开发环境配置指北</title>
-      <link>http://localhost:53321/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</link>
+      <link>http://localhost:1313/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</link>
       <pubDate>Wed, 15 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53321/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</guid>
+      <guid>http://localhost:1313/posts/2025-10-15-macos%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8C%97/</guid>
       <description>在入门款 MBA M1 上搭建 macOS 12.7 的日常开发工作流记录</description>
     </item>
     <item>
       <title>《魔法使之夜》全成就攻略与游玩心得</title>
-      <link>http://localhost:53321/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</link>
+      <link>http://localhost:1313/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</link>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53321/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</guid>
+      <guid>http://localhost:1313/posts/2025-10-14-%E9%AD%94%E6%B3%95%E4%BD%BF%E4%B9%8B%E5%A4%9C%E5%85%A8%E6%88%90%E5%B0%B1%E6%94%BB%E7%95%A5%E4%B8%8E%E6%B8%B8%E7%8E%A9%E5%BF%83%E5%BE%97/</guid>
       <description>安利性质的攻略记录与游玩心得分享</description>
     </item>
     <item>
       <title>论文阅读：Towards Understanding the Characteristics of Code Generation Errors Made by Large Language Models</title>
-      <link>http://localhost:53321/garden/2025-07-21-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBtowards-understanding-the-characteristics-of-code-generation-errors-made-by-large-language-models/</link>
+      <link>http://localhost:1313/garden/2025-07-21-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBtowards-understanding-the-characteristics-of-code-generation-errors-made-by-large-language-models/</link>
       <pubDate>Mon, 21 Jul 2025 08:00:00 +0800</pubDate>
-      <guid>http://localhost:53321/garden/2025-07-21-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBtowards-understanding-the-characteristics-of-code-generation-errors-made-by-large-language-models/</guid>
+      <guid>http://localhost:1313/garden/2025-07-21-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBtowards-understanding-the-characteristics-of-code-generation-errors-made-by-large-language-models/</guid>
       <description>&lt;p&gt;也是在中大草草阅读的一篇文章，来自 ICSE 25.&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;i-introduction&#34;&gt;&#xA;  I. Introduction&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#i-introduction&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;作者关注的核心问题是：&lt;strong&gt;大模型到底会犯什么类型的代码错误、这些错误难修到什么程度、与任务复杂度和测试通过率之间又有何关联？&lt;/strong&gt; 为此，他们挑选 CodeGen-16B、InCoder-1.3B、GPT-3.5、GPT-4、SantaCoder、StarCoder 六个代表性模型，在 HumanEval 164 个 Python 题目上汇总出了 557 份失败代码，并进行了细粒度的人工标注与分析。&lt;/p&gt;&#xA;&lt;p&gt;贡献主要有四点：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;构建了覆盖语义（根因）与句法（位置）两个维度的错误分类法，并在 GitHub 开源了标签及标注结果；&lt;/li&gt;&#xA;&lt;li&gt;比较了各模型语义/句法错误分布的异同，探索训练数据与错误模式的关系；&lt;/li&gt;&#xA;&lt;li&gt;定量评估了修复这些错误所需的工作量，并研究任务复杂度与测试通过率对错误分布的影响；&lt;/li&gt;&#xA;&lt;li&gt;基于标签体系搭建了交互式分析网站，为后续研究者提供可检索的错误案例库。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;ii-methodology&#34;&gt;&#xA;  II. Methodology&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#ii-methodology&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;a-研究设计与数据采集&#34;&gt;&#xA;  A. 研究设计与数据采集&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#a-%e7%a0%94%e7%a9%b6%e8%ae%be%e8%ae%a1%e4%b8%8e%e6%95%b0%e6%8d%ae%e9%87%87%e9%9b%86&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;数据集：HumanEval，共 164 道函数级 Python 编程题，平均 7.7 个单元测试。&lt;/li&gt;&#xA;&lt;li&gt;提示策略：沿用官方 prompt，温度设为 0 保证可复现性。&lt;/li&gt;&#xA;&lt;li&gt;错误收集：先跑单元测试过滤失败样本，再人工复核通过测试但语义不等价的情况，额外补充了 19 份隐性错误。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;b-开放式编码与标签体系构建&#34;&gt;&#xA;  B. 开放式编码与标签体系构建&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#b-%e5%bc%80%e6%94%be%e5%bc%8f%e7%bc%96%e7%a0%81%e4%b8%8e%e6%a0%87%e7%ad%be%e4%bd%93%e7%b3%bb%e6%9e%84%e5%bb%ba&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;两位作者先从 557 份错误代码中随机抽取 160 份进行开放式编码，定位错误片段、记录根因；之后引入另外两位作者共同迭代 codebook。经过三轮 Fleiss&amp;rsquo; κ 校验，最终收敛到 &lt;strong&gt;13 类语义特征 × 14 类句法特征&lt;/strong&gt;，全量标注的一致度达到 0.91/0.91。&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34;&#34;&gt;&#xA;&#xA;    &lt;div class=&#34;img-container&#34; &gt;&#xA;        &lt;img loading=&#34;lazy&#34; alt=&#34;&#34; src=&#34;https://blogxiaozheng.oss-cn-beijing.aliyuncs.com/images/20251029104009137.png&#34; &gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;figure class=&#34;&#34;&gt;&#xA;&#xA;    &lt;div class=&#34;img-container&#34; &gt;&#xA;        &lt;img loading=&#34;lazy&#34; alt=&#34;&#34; src=&#34;https://blogxiaozheng.oss-cn-beijing.aliyuncs.com/images/20251029104009137.png&#34; &gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &#xA;&lt;/figure&gt;&#xA;&lt;/p&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;c-修复代价的度量方式&#34;&gt;&#xA;  C. 修复代价的度量方式&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#c-%e4%bf%ae%e5%a4%8d%e4%bb%a3%e4%bb%b7%e7%9a%84%e5%ba%a6%e9%87%8f%e6%96%b9%e5%bc%8f&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;作者分别计算：&lt;/p&gt;</description>
     </item>
     <item>
       <title>论文阅读：Between Lines of Code——Unraveling the Distinct Patterns of Machine and Human Programmers</title>
-      <link>http://localhost:53321/garden/2025-07-09-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBbetween-lines-of-code-unraveling-the-distinct-patterns-of-machine-and-human-programmers/</link>
+      <link>http://localhost:1313/garden/2025-07-09-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBbetween-lines-of-code-unraveling-the-distinct-patterns-of-machine-and-human-programmers/</link>
       <pubDate>Wed, 09 Jul 2025 08:00:00 +0800</pubDate>
-      <guid>http://localhost:53321/garden/2025-07-09-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBbetween-lines-of-code-unraveling-the-distinct-patterns-of-machine-and-human-programmers/</guid>
+      <guid>http://localhost:1313/garden/2025-07-09-%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BBbetween-lines-of-code-unraveling-the-distinct-patterns-of-machine-and-human-programmers/</guid>
       <description>&lt;p&gt;这段时间在鸭大暑研，时间比较清闲。没事就不由自主多读完了几篇论文。有空的话我就多记录一下吧。&lt;br&gt;&#xA;平时一般会关注软件工程领域居多，翻一下A会A刊有没有适合的论文。&lt;br&gt;&#xA;这篇是关于大模型检测的，来自ISCE25.&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;i-introduction&#34;&gt;&#xA;  I. Introduction&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#i-introduction&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;大型语言模型（LLM）如 Codex 和 ChatGPT，通过在海量代码语料上训练，能够生成语法和功能均正确的代码，极大提升了软件开发的效率与创新能力。然而，这也带来了“人机代码混淆”问题：无法轻易区分代码是人类还是机器所写，进而导致代码归属混淆、漏洞追责困难、工作量评估失真等诚信与安全风险。由于过度依赖其感知的鲁棒性，机器生成的代码中的潜在漏洞可能被忽视。其中真正的作者身份和创建软件制品所投入的努力变得模糊不清。解决这些问题对于维护透明和安全的软件开发生命周期至关重要。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;基于扰动的检测方法&lt;/strong&gt;，如DetectGPT，在识别机器生成文本方面取得了最先进的结果：通过比较原始文本及其各种LLM扰动变体之间的似然分数差异来进行检测。&lt;/p&gt;&#xA;&lt;p&gt;然而，这种针对自然语言文本的检测方法在应用于代码时面临挑战，因为代码需要严格遵守句法规则，而自然语言可以保持更多变异性。这种情况突显了现有研究中的一个重大差距：&lt;strong&gt;缺乏对机器和人类编写代码的内在特征的深入评估&lt;/strong&gt;，这对于理解机器生成代码的独特模式和制定有效的检测方法至关重要。&lt;/p&gt;&#xA;&lt;p&gt;在这篇论文中，我们从三个方面对机器编写和人工编写的代码的差异性模式进行了比较分析，包括词汇多样性、简洁性和自然性。通过我们的分析，我们发现与人类相比，机器倾向于编写更加简洁和自然的代码，其标记范围较窄，并遵循常见的编程范式，这种差异在风格标记，如空白标记中更为明显。&lt;/p&gt;&#xA;&lt;p&gt;提出了一种名为DetectCodeGPT的新方法，用于检测机器编写的代码。我们通过战略性地插入风格化标记，扩展了DetectGPT的基于扰动的框架：针对性地插入空格与换行的“样式扰动”策略，以捕捉机器生成代码在空白字符等方面的刻板模式，实现无需外部模型、零样本的高效检测。&lt;/p&gt;&#xA;&lt;p&gt;为了评估DetectCodeGPT的有效性，我们在两个数据集上对六个代码语言模型进行了广泛的实验。结果表明，DetectCodeGPT在&lt;strong&gt;AUROC&lt;/strong&gt;这个指标上显著优于最先进的方法，证明是一种无模型且对模型差异鲁棒的方法。&lt;/p&gt;&#xA;&lt;p&gt;本文贡献：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;首篇对LLM生成的代码的独立模式进行全面深入分析。进一步推进LLM在编程中应用的重要见解。&lt;/li&gt;&#xA;&lt;li&gt;提出了一种检测机器生成代码的新方法。&lt;/li&gt;&#xA;&lt;li&gt;在多种设置下广泛评估了DetectCodeGPT，并展示了我们方法的有效性。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;ii-background&#34;&gt;&#xA;  II. Background&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#ii-background&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;a-large-language-models-for-code&#34;&gt;&#xA;  A. Large Language Models for Code&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#a-large-language-models-for-code&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;基于 Transformer 解码器的大语言模型在自然语言处理任务中取得了显著的成功。在代码生成领域， Codex 和 AlphaCode 是训练大型语言模型在代码上的开创性工作。后来，为增强模型的代码理解与生成能力，研究者提出了“填空式中段”（ fill-in-the-middle ）预训练任务，以及基于指令的微调方法。最新一代模型（ ChatGPT 、 LLaMA ）在编程语言与自然语言上同时预训练，进一步提升了跨语言的代码生成效果。&lt;/p&gt;&#xA;&lt;h3 class=&#34;heading&#34; id=&#34;b-perturbation-based-detection-of-machine-generated-text&#34;&gt;&#xA;  B. Perturbation-Based Detection of Machine-Generated Text&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#b-perturbation-based-detection-of-machine-generated-text&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;在机器生成文本检测领域，基于扰动的 DetectGPT 方法已成为最先进的技术。核心思想是：对机器生成的文本 x 施加微小扰动 $q(\cdot | x)$ 得到 $\widetilde{x}$ 时，其对数概率 $\log p_\theta(x)$ 的下降幅度要明显大于人类文本。这是因为机器生成的文本通常更可预测、更贴合训练模式，因此在扰动下会表现出明显的负曲率（log 概率急剧下降）。相比之下，人类撰写的文本具有更丰富多样的风格，反映了多元的经验与认知过程，所以在相同扰动下，人类文本的 $\log p_\theta(x)$ 不会出现如此剧烈的下降。&lt;/p&gt;</description>
     </item>
     <item>
       <title>音击手台静音方案探索尝试</title>
-      <link>http://localhost:53321/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</link>
+      <link>http://localhost:1313/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</link>
       <pubDate>Wed, 07 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53321/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</guid>
+      <guid>http://localhost:1313/posts/2025-05-07-%E9%9F%B3%E5%87%BB%E6%89%8B%E5%8F%B0%E9%9D%99%E9%9F%B3%E6%96%B9%E6%A1%88%E5%B0%9D%E8%AF%95/</guid>
       <description>一些小手工</description>
     </item>
     <item>
       <title>从零开始使用Github Pages &#43; Jekyll搭建博客</title>
-      <link>http://localhost:53321/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53321/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>http://localhost:1313/posts/2025-03-12-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8github-pages-&#43;-jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>本篇其实是课程作业 —— 上一篇博客的初始化</description>
     </item>
     <item>
       <title>关于我</title>
-      <link>http://localhost:53321/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53321/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;🚧 施工中 🚧&lt;/p&gt;&#xA;&lt;p&gt;你好，我是小郑。&lt;/p&gt;&#xA;&lt;p&gt;这个小房间，是我放慢脚步的角落。&lt;br&gt;&#xA;在这里，我和文字对坐，记录那些不想被时间冲淡的念头。&lt;br&gt;&#xA;有时候是日常的一点微光，有时候是思考的碎片，也有时候只是情绪的自我整理。&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;我在这里做什么&#34;&gt;&#xA;  我在这里做什么&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%88%91%e5%9c%a8%e8%bf%99%e9%87%8c%e5%81%9a%e4%bb%80%e4%b9%88&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;记录值得反复咀嚼的想法、阅读和方法&lt;/li&gt;&#xA;&lt;li&gt;写下日常生活的温度、片段与留白&lt;/li&gt;&#xA;&lt;li&gt;分享一些兴趣与灵感：书、影、音、游、旅途、学习&lt;/li&gt;&#xA;&lt;li&gt;&lt;del&gt;还有的没想好&lt;/del&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;想对你说&#34;&gt;&#xA;  想对你说&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#%e6%83%b3%e5%af%b9%e4%bd%a0%e8%af%b4&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;谢谢你停留在这里。&lt;br&gt;&#xA;在这个嘈杂的世界里，能与你短暂地相遇，本身就是温柔的巧合。&lt;br&gt;&#xA;欢迎留下自己的足迹～&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;愿我们都能在自己的小房间里，找到平静与真诚。&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
   </channel>
