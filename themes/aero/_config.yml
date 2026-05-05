@@ -1,0 +1,36 @@
+menu:
+  about: /about
+favicon:
+  enable: true
+  icon: /favicon-32x32.png
+profile:
+  enable: true
+  author: 'Xiaozheng'
+  avatar: 'https://blogxiaozheng.oss-cn-beijing.aliyuncs.com/images/alice-ico.png'
+  avatar_link: 'https://github.com/Xiaozheng03Asada/'
+  social: # you can customize which and how many social links to show
+    - name: Github
+      link: 'https://github.com/Xiaozheng03Asada/'
+      icon: /image/icon/github.png
+    - name: Bilibili
+      link: 'https://space.bilibili.com/21958901/'
+      icon: /image/icon/bilibili.png
+music:
+  enable: false
+  autoplay: false
+  songs:
+    - title: ''
+      artist: ''
+      cover: ''
+      url: ''
+math:
+  enable: true
+  engine: mathjax
+giscus:
+  enable: true
+  repo: Xiaozheng03Asada/Xiaozheng03Asada.github.io
+  repoid: R_kgDOQBKVLg
+  category: General
+  categoryid: DIC_kwDOQBKVLs4Cwj23
+  mapping: pathname
+  theme: preferred_color_scheme

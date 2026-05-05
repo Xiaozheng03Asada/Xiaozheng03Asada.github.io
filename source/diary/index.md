@@ -1,0 +1,9 @@
+---
+title: 日记
+description: 把每一次心情与灵感留在这里。
+section_path: diary
+layout: section
+---
+
+这一页会收集所有的日记记录，依照书写日期从新到旧排列，像翻开一本不断续写的笔记。
+

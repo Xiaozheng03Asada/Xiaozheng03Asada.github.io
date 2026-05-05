@@ -1,0 +1,220 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    margin-bottom: 8px;
+}
+
+header {
+    width: 100%;
+    min-height: 76px;
+    padding: 18px 28px;
+    border-radius: 0 0 0 15px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+
+.blog-title {
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0;
+    text-shadow: 0 0 10px var(--white-main),
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main), 
+        0 0 10px var(--white-main);
+}
+
+nav {
+    position: relative;
+    border-top: none;
+    border-radius: 18px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    margin: -16px 12px 0 auto;
+    max-width: min(100%, 820px);
+    top: 0;
+    left: 0;
+    overflow: visible;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+}
+
+.nav-links li {
+    display: flex;
+    box-sizing: border-box;
+    min-height: 32px;
+}
+
+.nav-links li a {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 32px;
+    gap: 6px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 13px 0 10px;
+    color: var(--black-main);
+    border-radius: 999px;
+    border: 1px solid rgba(26, 66, 104, 0.48);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.95),
+        inset 0 -8px 16px rgba(70, 125, 166, 0.2),
+        0 1px 0 rgba(255, 255, 255, 0.85),
+        0 3px 8px rgba(0, 39, 76, 0.22);
+    text-shadow: 0 1px 0 var(--white-main);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav-text {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.link-home {
+    border-left: 1px solid rgba(26, 66, 104, 0.48);
+}
+
+.aero-icon {
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    border-radius: 7px;
+    background:
+        radial-gradient(circle at 32% 24%, rgba(255, 255, 255, 0.96) 0 12%, transparent 13%),
+        linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.18) 38%, rgba(40, 126, 191, 0.22) 39%),
+        linear-gradient(160deg, var(--icon-a, #4aa3df), var(--icon-b, #7edc98));
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -6px 9px rgba(0, 39, 76, 0.25),
+        0 0 0 1px rgba(20, 70, 110, 0.45),
+        0 1px 3px rgba(0, 0, 0, 0.22);
+}
+
+.aero-icon::before,
+.aero-icon::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+}
+
+.icon-home { --icon-a: #41a9f2; --icon-b: #78de8f; }
+.icon-home::before {
+    width: 12px;
+    height: 10px;
+    bottom: 4px;
+    background: linear-gradient(#ffffff, #dff7ff);
+    clip-path: polygon(50% 0, 100% 42%, 100% 100%, 62% 100%, 62% 65%, 38% 65%, 38% 100%, 0 100%, 0 42%);
+    box-shadow: 0 0 0 1px rgba(12, 84, 128, 0.35);
+}
+
+.icon-archives { --icon-a: #5ca7ef; --icon-b: #8d6df0; }
+.icon-archives::before {
+    width: 13px;
+    height: 14px;
+    border-radius: 2px;
+    background:
+        linear-gradient(90deg, transparent 0 28%, rgba(40, 79, 120, 0.42) 29% 33%, transparent 34%),
+        linear-gradient(#ffffff, #dcecff);
+}
+
+.icon-tags { --icon-a: #f4b64a; --icon-b: #74d1ff; }
+.icon-tags::before {
+    width: 13px;
+    height: 13px;
+    border-radius: 3px 3px 3px 8px;
+    transform: rotate(-45deg);
+    background: linear-gradient(#fff8c9, #ffb84a);
+}
+.icon-tags::after {
+    width: 3px;
+    height: 3px;
+    top: 6px;
+    right: 7px;
+    border-radius: 50%;
+    background: rgba(42, 93, 128, 0.55);
+}
+
+.icon-diary { --icon-a: #6dcdf6; --icon-b: #ffffff; }
+.icon-diary::before {
+    width: 13px;
+    height: 15px;
+    border-radius: 2px 5px 5px 2px;
+    background:
+        repeating-linear-gradient(0deg, transparent 0 4px, rgba(79, 128, 160, 0.26) 5px 6px),
+        linear-gradient(90deg, #7ec4ff 0 22%, #ffffff 23%);
+}
+
+.icon-garden { --icon-a: #33c47b; --icon-b: #b6f29f; }
+.icon-garden::before {
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(ellipse at 35% 60%, #ffffff 0 18%, #7ddd6e 19% 55%, transparent 56%);
+    clip-path: polygon(50% 0, 70% 35%, 100% 50%, 68% 62%, 50% 100%, 32% 62%, 0 50%, 30% 35%);
+}
+
+.icon-friends { --icon-a: #4aa3ff; --icon-b: #72e5d4; }
+.icon-friends::before {
+    width: 8px;
+    height: 8px;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 7px 2px 0 -1px #e6f9ff, 3px 8px 0 3px rgba(255, 255, 255, 0.9);
+}
+
+.icon-cv { --icon-a: #88b7ff; --icon-b: #c9f0ff; }
+.icon-cv::before {
+    width: 14px;
+    height: 10px;
+    top: 5px;
+    border-radius: 2px;
+    background: linear-gradient(#eefaff, #80bdf4);
+    box-shadow: 0 4px 0 -2px rgba(21, 73, 110, 0.65);
+}
+
+.icon-about { --icon-a: #88d4ff; --icon-b: #f7fbff; }
+.icon-about::before {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 32%, #2d79b8 0 9%, transparent 10%), linear-gradient(#ffffff, #dff5ff);
+}
+.icon-about::after {
+    width: 3px;
+    height: 7px;
+    bottom: 5px;
+    border-radius: 2px;
+    background: #2d79b8;
+}

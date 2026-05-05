@@ -1,0 +1,18 @@
+<div class="card post-full">
+    <span class="post-title article-title">
+        <%= page.title %>
+    </span>
+
+    <div class="post-content">
+        <%- page.content %>
+
+        <div class="terms-grid">
+            <% site.tags.sort('name').forEach(function(tag) { %>
+                <a class="term-card" href="<%- url_for(tag.path) %>">
+                    <span class="term-name"><%= tag.name %></span>
+                    <span class="term-count"><%= tag.length %></span>
+                </a>
+            <% }); %>
+        </div>
+    </div>
+</div>

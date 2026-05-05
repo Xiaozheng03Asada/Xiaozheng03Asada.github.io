@@ -1,0 +1,70 @@
+<div class="header" id="pjax-header">
+    <header class="card">
+        <p class="blog-title">
+            <%= config.subtitle %>
+        </p>
+    </header>
+    <nav class="button-bar">
+        <ul class="nav-links">
+            <li>
+                <a href="/" class="button link-home <%= is_home() ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-home" aria-hidden="true"></span>
+                        <span>主页</span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/archives" class="button <%= is_archive() || is_current('archives') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-archives" aria-hidden="true"></span>归档
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags" class="button <%= is_tag() || is_current('tags') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-tags" aria-hidden="true"></span>标签
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/diary" class="button <%= is_current('diary') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-diary" aria-hidden="true"></span>日记
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/garden" class="button <%= is_current('garden') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-garden" aria-hidden="true"></span>花园
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/friends" class="button <%= is_current('friends') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-friends" aria-hidden="true"></span>友人帐
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/cv/" class="button">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-cv" aria-hidden="true"></span>学术主页
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/about" class="button <%= is_current('about') ? 'active' : '' %>">
+                    <span class="nav-text">
+                        <span class="aero-icon icon-about" aria-hidden="true"></span>关于我
+                    </span>
+                </a>
+            </li>
+            
+        </ul>
+
+    </nav>
+</div>

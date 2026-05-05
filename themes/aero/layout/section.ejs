@@ -1,0 +1,23 @@
+<div class="card post-full">
+    <span class="post-title article-title">
+        <%= page.title %>
+    </span>
+
+    <div class="post-content">
+        <%- page.content %>
+    </div>
+
+    <section class="section-post-list">
+        <% var sectionPath = page.section_path; %>
+        <% var posts = site.pages.filter(function(item) {
+            return item.path.indexOf(sectionPath + '/') === 0 && item.path !== sectionPath + '/index.html';
+        }).sort('date', -1); %>
+
+        <% posts.forEach(function(post) { %>
+            <article class="section-post-item">
+                <span class="section-post-date"><%= date(post.date, 'YYYY-MM-DD') %></span>
+                <a class="section-post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+            </article>
+        <% }); %>
+    </section>
+</div>
