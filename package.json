@@ -27,6 +27,6 @@
     "hexo-theme-landscape": "^1.0.0"
   },
   "devDependencies": {
-    "playwright": "^1.59.1"
+    "playwright": "^1.60.0"
   }
 }
