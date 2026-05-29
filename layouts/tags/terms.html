@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="list-container">
+
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <div class="terms-grid">
+        {{ $taxonomy := .Data.Terms }}
+        {{ range $name, $term := $taxonomy }}
+        <a class="term-card" href="{{ $term.Page.RelPermalink }}">
+            <span class="term-name">#{{ $name }}</span>
+            <span class="term-count">{{ $term.Count }}</span>
+        </a>
+        {{ end }}
+    </div>
+
+</div>
+
+{{ end }}
+
+

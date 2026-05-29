@@ -1,0 +1,7 @@
+/* Place custom css here */
+/* Tags terms grid */
+.terms-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; margin-top: 12px; }
+.term-card { display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; border: 1px solid var(--c-border); border-radius: 8px; text-decoration: none; color: inherit; background: var(--c-bg-elevated); transition: background .2s, border-color .2s; }
+.term-card:hover { background: var(--c-bg-subtle); border-color: var(--c-border-strong); }
+.term-name { font-weight: 600; }
+.term-count { font-size: 0.9em; opacity: .8; }

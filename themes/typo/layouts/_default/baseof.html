@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+{{ $theme := "auto"}}
+
+{{ with .Param "theme" }}
+{{ $theme = .}}
+{{ end }}
+
+<body class="{{ $theme }}">
+
+  <div class="content">
+    {{ if not (eq .Section "garden") }}
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+    {{ end }}
+
+    <main class="main {{ if eq .Section "garden" }}main--garden{{ end }}">
+      {{ if eq .Section "garden" }}
+        {{ block "gardenMain" . }}{{ end }}
+      {{ else }}
+        {{ block "main" . }}{{ end }}
+      {{ end }}
+    </main>
+  </div>
+
+  {{/* Body end hook */}}
+  {{ partial "functions/get_hook.html" (dict "hook" "body_end" "context" .) }}
+
+  {{ if not (eq .Section "garden") }}
+  <footer>
+    {{ partial "footer.html" . }}
+  </footer>
+  {{ end }}
+
+  {{ if .Param "math" }}
+  {{ partialCached "math.html" . }}
+  {{ end }}
+</body>
+
+<script src="{{ "js/theme-switch.js" | relURL }}"></script>
+<script defer src="{{ "js/copy-code.js" | relURL }}"></script>
+ 
+</html>

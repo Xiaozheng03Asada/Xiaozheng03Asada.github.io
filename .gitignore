@@ -1,0 +1,15 @@
+# Editor
+.vscode
+
+# macOS
+.DS_Store
+**/.DS_Store
+._*
+
+# Hugo build artifacts
+public/
+resources/
+.hugo_build.lock
+
+# Local Claude Code settings
+.claude/

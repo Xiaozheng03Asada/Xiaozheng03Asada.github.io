@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<div class="diary-container">
+
+  {{ partial "breadcrumbs.html" . }}
+
+  <h1 class="diary-title">{{ .Title }}</h1>
+
+  {{ with .Content }}
+  <div class="diary-intro">
+    {{ . }}
+  </div>
+  {{ end }}
+
+  {{ $entries := .Pages.ByDate.Reverse }}
+
+  {{ if not (gt (len $entries) 0) }}
+  <p class="diary-empty">还没有日记，等下一次落笔吧。</p>
+  {{ end }}
+
+  {{ range $index, $entry := $entries }}
+  {{ $slug := $entry.File.TranslationBaseName | urlize }}
+  <article class="diary-entry" id="{{ $entry.Date | time.Format "2006-01-02" }}">
+    <header class="diary-entry-header">
+      {{ with $entry.Title }}
+      <h2 class="diary-entry-title">{{ . }}</h2>
+      {{ end }}
+      {{ with $entry.Date }}
+      {{ $machine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $human := . | time.Format "2006-01-02" }}
+      <p class="diary-entry-date">
+        <time datetime="{{ $machine }}">{{ $human }}</time>
+      </p>
+      {{ end }}
+    </header>
+
+    <div class="diary-entry-content">
+      {{ $entry.Content }}
+    </div>
+  </article>
+  {{ end }}
+
+</div>
+
+{{ end }}
