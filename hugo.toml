@@ -92,7 +92,8 @@ url = "/about"
 # Syntax highlight on code blocks
 [markup]
 [markup.highlight]
-style = 'algol'
+noClasses = false
+style = 'github'
 [markup.goldmark]
 [markup.goldmark.renderer]
 unsafe = true
